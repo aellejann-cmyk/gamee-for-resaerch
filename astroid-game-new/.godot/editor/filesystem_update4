@@ -1,0 +1,11 @@
+res://scenes/game.tscn
+res://scenes/player.tscn
+res://script/scripts/area_2d.tscn
+res://script/scripts/area_2d.gd
+res://scenes/area_2d.tscn
+res://scenes/LaserUsed.tscn
+res://script/game.gd
+res://script/player.gd
+res://script/asteroid_large.gd
+res://scenes/asteroid_large.tscn
+res://scenes/asteroid.tscn

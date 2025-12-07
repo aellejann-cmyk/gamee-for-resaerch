@@ -5,4 +5,4 @@ extends Area2D
 var movement_vector := Vector2(0, -1)
 
 func _physics_process(_delta):
-	global_position += movement_vector * speed * _delta 
+	global_position += movement_vector.rotated(rotation) * speed * _delta 

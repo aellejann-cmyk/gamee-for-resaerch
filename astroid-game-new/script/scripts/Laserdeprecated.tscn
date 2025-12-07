@@ -7,15 +7,17 @@
 radius = 18.0
 height = 176.0
 
-[node name="Area2D" type="Area2D"]
+[node name="Laser" type="Area2D"]
+position = Vector2(-6, 0)
+scale = Vector2(0.46623182, 0.46623182)
 script = ExtResource("1_so37q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(502.83313, 244.33484)
+position = Vector2(0.8331299, -14.665161)
 shape = SubResource("CapsuleShape2D_b7eu8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(503.93454, 260.79294)
+position = Vector2(1.9346008, 1.7929382)
 rotation = -1.5865043
 scale = Vector2(0.09698476, 0.2250224)
 texture = ExtResource("2_6jk1t")
