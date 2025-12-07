@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgwpyfxdogs53"]
+
+[ext_resource type="Script" uid="uid://cy7nx71jk1t3o" path="res://scenes/player.gd" id="1_a7dhc"]
+[ext_resource type="Texture2D" uid="uid://c43lfgaitppye" path="res://toppng.com-laser-beam-pixel-art-1901x351.png" id="1_xmihv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a7dhc"]
+radius = 0.999897
+height = 27.997253
+
+[node name="laser" type="Area2D"]
+script = ExtResource("1_a7dhc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(609, 307.89673)
+scale = Vector2(0.014729115, 0.010807599)
+texture = ExtResource("1_xmihv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(609, 307.89673)
+rotation = -1.584759
+shape = SubResource("CapsuleShape2D_a7dhc")

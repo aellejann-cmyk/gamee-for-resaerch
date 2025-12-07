@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://kmikv8k7wdp3"]
+
+[ext_resource type="Script" uid="uid://cy7nx71jk1t3o" path="res://scenes/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://dx7o3td4bvj1u" path="res://DurrrSpaceShip.png" id="2_qhqgy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dqkch"]
+radius = 27.294687
+
+[node name="player" type="CharacterBody2D"]
+position = Vector2(640, 360)
+script = ExtResource("1_g2els")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_qhqgy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 12)
+shape = SubResource("CircleShape2D_dqkch")
