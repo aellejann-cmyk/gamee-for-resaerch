@@ -1,4 +1,7 @@
-extends Area2D
+class_name Asteroid extends Area2D
+
+signal exploded(pos, size)
+
 @export var speed := 20.0
 enum asteroidSizes {LARGE, MEDIUM, SMALL}
 @onready var sprite = $Sprite2D
@@ -24,7 +27,7 @@ func _ready() -> void:
 			area.shape = preload("res://Resources/asteroidSmallHitbox.tres")
 			speed = randf_range(150, 200)
 			sprite.texture = preload("res://PlaceHolder/asteroid.png")
-			sprite.scale = Vector2(0.08, 0.08)
+			sprite.scale = Vector2(0.20, 0.20)
 			
 			
 func _physics_process(_delta):
@@ -40,8 +43,9 @@ func _physics_process(_delta):
 	elif global_position.x-radius > screen_size.x:
 		global_position.x = -radius
 
-
-#
+func explode():
+	emit_signal("exploded", global_position, size)
+	queue_free()
 #func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 	#await get_tree().create_timer(3).timeout
 	#queue_free()
