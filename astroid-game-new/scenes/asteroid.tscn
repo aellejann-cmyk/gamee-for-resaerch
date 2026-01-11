@@ -21,4 +21,5 @@ scale = Vector2(0.11940894, 0.14987916)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = ExtResource("3_pnq5b")
 
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

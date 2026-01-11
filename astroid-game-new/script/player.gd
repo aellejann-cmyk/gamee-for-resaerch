@@ -1,12 +1,16 @@
-extends CharacterBody2D
+class_name Player extends CharacterBody2D
 
 signal laser_shot(laser)
+signal died
 
 @export var acceleration := 10.0
 @export var max_speed := 350.0
 @export var rotation_speed := 250.0
 var can_shoot = true
+
 @onready var muzzle = $muzzles
+@onready var sprite = $Sprite2D
+var alive := true
 
 var laser_scene = preload("res://scenes/LaserUsed.tscn")
 
@@ -54,3 +58,23 @@ func shoot_laser():
 		can_shoot = false
 		await get_tree().create_timer(0.2).timeout
 		can_shoot = true
+
+func die():
+	if alive == true:
+		alive = false
+		
+		emit_signal("died")
+		sprite.visible = false
+		process_mode = Node.PROCESS_MODE_DISABLED
+	
+func respawn(pos):
+	if alive == false:
+		
+		global_position = pos
+		velocity = Vector2.ZERO
+		
+		sprite.visible = true
+		process_mode = Node.PROCESS_MODE_INHERIT
+		await get_tree().create_timer(1).timeout
+		
+		alive = true

@@ -4,3 +4,7 @@ res://script/game.gd
 res://scenes/LaserUsed.tscn
 res://scenes/game.tscn
 res://Resources/asteroidSmallHitbox.tres
+res://scenes/hud.tscn
+res://script/hud.gd
+res://scenes/player.tscn
+res://script/player.gd

@@ -12,19 +12,22 @@ func _ready() -> void:
 	rotation = randf_range(0, 2*PI)
 	match size:
 		asteroidSizes.LARGE:
-			area.shape = preload("res://Resources/asteroidLargeHitbox.tres")
+			#area.shape = preload("res://Resources/asteroidLargeHitbox.tres")
+			area.set_deferred("shape", preload("res://Resources/asteroidLargeHitbox.tres"))
 			speed = randf_range(50, 100)
 			sprite.texture = preload("res://PlaceHolder/asteroid(1).png")
 			sprite.scale = Vector2(0.8, 0.8)
 			
 		asteroidSizes.MEDIUM:
-			area.shape = preload("res://Resources/asteroidMediumHitbox.tres")
+			#area.shape = preload("res://Resources/asteroidMediumHitbox.tres")
+			area.set_deferred("shape", preload("res://Resources/asteroidMediumHitbox.tres"))
 			speed = randf_range(100, 150)
 			sprite.texture = preload("res://PlaceHolder/meteorite.png")
 			sprite.scale = Vector2(0.5, 0.5)
 			
 		asteroidSizes.SMALL:
-			area.shape = preload("res://Resources/asteroidSmallHitbox.tres")
+			#area.shape = preload("res://Resources/asteroidSmallHitbox.tres")
+			area.set_deferred("shape", preload("res://Resources/asteroidSmallHitbox.tres"))
 			speed = randf_range(150, 200)
 			sprite.texture = preload("res://PlaceHolder/asteroid.png")
 			sprite.scale = Vector2(0.20, 0.20)
@@ -50,3 +53,9 @@ func explode():
 	#await get_tree().create_timer(3).timeout
 	#queue_free()
 	#
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body is Player:
+		var player = body
+		player.die()
