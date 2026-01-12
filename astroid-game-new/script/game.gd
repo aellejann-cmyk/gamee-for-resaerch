@@ -5,6 +5,7 @@ extends Node2D
 @onready var Asteroids = $Asteroids
 @onready var hud = $UI/HUD
 @onready var spawn = $PlayerRespawn
+@onready var game_over_scene = $"UI/Game Over Scene"
 
 var  score := 0:
 	set(value):
@@ -49,7 +50,7 @@ func spawn_asteroid(pos, size):
 func player_died():
 	life -= 1
 	if life <= 0:
-		get_tree().reload_current_scene()
+		game_over_scene.visible = true
 	else:
 		await get_tree().create_timer(2).timeout
 		player.respawn(spawn.global_position)

@@ -8,3 +8,5 @@ res://scenes/hud.tscn
 res://script/hud.gd
 res://scenes/player.tscn
 res://script/player.gd
+res://scenes/game_over_scene.tscn
+res://script/game_over_scene.gd
