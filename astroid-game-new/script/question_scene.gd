@@ -137,27 +137,56 @@ var quiz12 = [
 #}
 var answer_picked = false
 var question_picked = false
-
+var correct_answer
+var grade_level = quiz12
 # Called when the node enters the scene tree for the first time.
 
 func _ready() -> void:
-	questionpicker(1)
+	questionpicker(randi_range(0, grade_level.size() - 1))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-
+		
 # use dictionaries and arrays for question randomization. use an array to store and to randomize picking questions,
 # then use the picked question as a key in a dictionary to get the values of an array of the choices
 func questionpicker(index):
+	question_picked = true
+	answer_picked = false
 	var gradelevel = quiz12[index]
 	var question = gradelevel["question"]
 	var choices = gradelevel["options"]
-	var correct_answer = gradelevel["correct_answer"]
+	correct_answer = gradelevel["correct_answer"]
 	
 	choices.shuffle()
 	question_label.text = str(question)
-	labelA.text = choices.pop_front()
-	labelB.text = choices.pop_front()
-	labelC.text = choices.pop_front()
-	labelD.text = choices.pop_front()
+	labelA.text = choices[0]
+	labelB.text = choices[1]
+	labelC.text = choices[2]
+	labelD.text = choices[3]
+
+
+func _on_a_pressed() -> void:
+	if labelA.text == str(correct_answer) and answer_picked == false:
+		print("CORRECT ANSWER")
+		answer_picked = true
+		question_picked = false
+		questionpicker(randi_range(0, grade_level.size() - 1))
+func _on_b_pressed() -> void:
+	if labelB.text == str(correct_answer) and answer_picked == false:
+		print("CORRECT ANSWER")
+		answer_picked = true
+		question_picked = false
+		questionpicker(randi_range(0, grade_level.size() - 1))
+func _on_c_pressed() -> void:
+	if labelC.text == str(correct_answer) and answer_picked == false:
+		print("CORRECT ANSWER")
+		answer_picked = true
+		question_picked = false
+		questionpicker(randi_range(0, grade_level.size() - 1))
+func _on_d_pressed() -> void:
+	if labelD.text == str(correct_answer) and answer_picked == false:
+		print("CORRECT ANSWER")
+		answer_picked = true
+		question_picked = false
+		questionpicker(randi_range(0, grade_level.size() - 1))

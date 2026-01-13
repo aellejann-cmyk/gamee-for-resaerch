@@ -120,3 +120,8 @@ horizontal_alignment = 2
 autowrap_mode = 3
 autowrap_trim_flags = 0
 text_direction = 1
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/A" to="." method="_on_a_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/B" to="." method="_on_b_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/C" to="." method="_on_c_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer4/D" to="." method="_on_d_pressed"]
