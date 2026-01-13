@@ -1,5 +1,7 @@
-Button
 Label
+HBoxContainer
+Button
+VBoxContainer
 Node2D
 Control
 CanvasLayer

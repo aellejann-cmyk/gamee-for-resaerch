@@ -16,6 +16,7 @@ var life := 3:
 		life = value
 		hud.lives = life
 
+var multiplier := 1.0 
 
 var asteroid_scene = preload("res://scenes/asteroid.tscn")
 func _ready():
@@ -24,20 +25,23 @@ func _ready():
 	player.connect("died", player_died)
 	for asteroid in Asteroids.get_children():
 		asteroid.connect("exploded", _on_asteroid_exploded)
+		
+
+
 func firing(laser):
 	lasers.add_child(laser)
 func _on_asteroid_exploded(pos, size):
 	match size:
 		Asteroid.asteroidSizes.LARGE:
-			score += 100
+			score += (100 * multiplier)
 			for i in range(2):
 				spawn_asteroid(pos, Asteroid.asteroidSizes.MEDIUM)
 		Asteroid.asteroidSizes.MEDIUM:
-			score += 50
+			score += (50 * multiplier)
 			for i in range(3):
 				spawn_asteroid(pos, Asteroid.asteroidSizes.SMALL)
 		Asteroid.asteroidSizes.SMALL:
-			score += 25
+			score += (25 * multiplier)
 	print(score)
 func spawn_asteroid(pos, size):
 	var a = asteroid_scene.instantiate()
@@ -55,3 +59,5 @@ func player_died():
 		await get_tree().create_timer(2).timeout
 		player.respawn(spawn.global_position)
 	print(life)
+
+	

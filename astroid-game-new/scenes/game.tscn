@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bk1qrimj1ourc"]
+[gd_scene load_steps=7 format=3 uid="uid://bk1qrimj1ourc"]
 
 [ext_resource type="PackedScene" uid="uid://kmikv8k7wdp3" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://wkh7aqywprj3" path="res://script/game.gd" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://bstkgciyp5x3u" path="res://scenes/hud.tscn" id="2_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://dcvr07go0h2py" path="res://scenes/game_over_scene.tscn" id="3_iywne"]
 [ext_resource type="PackedScene" uid="uid://bmg1a85vnghuf" path="res://scenes/asteroid.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://b3b327bgw11lm" path="res://scenes/pause_scene.tscn" id="4_p57ef"]
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_yqjtg")
@@ -16,8 +17,11 @@ script = ExtResource("1_yqjtg")
 [node name="Game Over Scene" parent="UI" instance=ExtResource("3_iywne")]
 visible = false
 
+[node name="pause_scene" parent="UI" instance=ExtResource("4_p57ef")]
+visible = false
+
 [node name="player" parent="." instance=ExtResource("1_uwrxv")]
-position = Vector2(575, 408)
+position = Vector2(609, 345)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(641, 358)
@@ -27,13 +31,19 @@ position = Vector2(641, 358)
 [node name="Asteroids" type="Node" parent="."]
 
 [node name="Asteroid" parent="Asteroids" instance=ExtResource("3_lnu2h")]
-position = Vector2(289, 321)
+position = Vector2(151.00002, 538)
 
 [node name="Asteroid2" parent="Asteroids" instance=ExtResource("3_lnu2h")]
-position = Vector2(922, 215)
+position = Vector2(1078, 121.00001)
 
 [node name="Asteroid3" parent="Asteroids" instance=ExtResource("3_lnu2h")]
-position = Vector2(566, 126)
+position = Vector2(574, 31.000004)
+
+[node name="Asteroid4" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(1129, 565)
+
+[node name="Asteroid5" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(96.00012, 76.00003)
 
 [node name="PlayerRespawn" type="Node2D" parent="."]
 position = Vector2(640, 360)

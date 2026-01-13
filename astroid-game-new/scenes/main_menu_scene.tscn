@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://duu4bqop2klq2"]
+
+[ext_resource type="Script" uid="uid://c5g50cmk71bdp" path="res://script/main_menu_scene.gd" id="1_vfskp"]
+[ext_resource type="FontFile" uid="uid://dbdvbgducoq2q" path="res://ARCADE.TTF" id="1_xhf6x"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vfskp"]
+font = ExtResource("1_xhf6x")
+font_size = 117
+
+[node name="main menu" type="Node2D"]
+script = ExtResource("1_vfskp")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 326.0
+offset_top = 160.0
+offset_right = 934.0
+offset_bottom = 282.0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "START MENU"
+label_settings = SubResource("LabelSettings_vfskp")
+
+[node name="button manager" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/button manager"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.44200003
+anchor_right = 0.44200003
+offset_left = -96.73602
+offset_top = 16.0
+offset_right = 165.26398
+offset_bottom = 201.0
+theme_override_constants/separation = 29
+
+[node name="Start" type="Button" parent="VBoxContainer/button manager/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xhf6x")
+theme_override_font_sizes/font_size = 70
+text = " START "
+
+[node name="quit" type="Button" parent="VBoxContainer/button manager/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xhf6x")
+theme_override_font_sizes/font_size = 70
+text = "QUIT"
+
+[connection signal="pressed" from="VBoxContainer/button manager/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/button manager/VBoxContainer/quit" to="." method="_on_quit_pressed"]

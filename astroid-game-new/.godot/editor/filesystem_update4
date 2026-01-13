@@ -10,3 +10,9 @@ res://scenes/player.tscn
 res://script/player.gd
 res://scenes/game_over_scene.tscn
 res://script/game_over_scene.gd
+res://scenes/main_menu_scene.tscn
+res://script/main_menu_scene.gd
+res://scenes/pause_scene.tscn
+res://script/pause_scene.gd
+res://scenes/question_scene.tscn
+res://script/question_scene.gd
