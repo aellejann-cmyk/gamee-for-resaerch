@@ -36,3 +36,12 @@ offset_right = 72.0
 offset_bottom = 75.0
 text = "LIVES: 3"
 label_settings = SubResource("LabelSettings_oo0fn")
+
+[node name="mult" type="Label" parent="."]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 8.0
+offset_right = 584.0
+offset_bottom = 68.0
+text = "Multi: 0"
+label_settings = SubResource("LabelSettings_oo0fn")

@@ -1,4 +1,6 @@
 extends Control
+signal correct
+
 @onready var labelA = $VBoxContainer/HBoxContainer/LabelA
 @onready var labelB = $VBoxContainer/HBoxContainer2/LabelB
 @onready var labelC = $VBoxContainer/HBoxContainer3/LabelC
@@ -151,6 +153,7 @@ func _process(delta: float) -> void:
 # use dictionaries and arrays for question randomization. use an array to store and to randomize picking questions,
 # then use the picked question as a key in a dictionary to get the values of an array of the choices
 func questionpicker(index):
+	randomize()
 	question_picked = true
 	answer_picked = false
 	var gradelevel = quiz12[index]
@@ -171,22 +174,33 @@ func _on_a_pressed() -> void:
 		print("CORRECT ANSWER")
 		answer_picked = true
 		question_picked = false
+		emit_signal("correct")
+		visible = false
 		questionpicker(randi_range(0, grade_level.size() - 1))
+		
 func _on_b_pressed() -> void:
 	if labelB.text == str(correct_answer) and answer_picked == false:
 		print("CORRECT ANSWER")
 		answer_picked = true
 		question_picked = false
+		emit_signal("correct")
+		visible = false
 		questionpicker(randi_range(0, grade_level.size() - 1))
+		
 func _on_c_pressed() -> void:
 	if labelC.text == str(correct_answer) and answer_picked == false:
 		print("CORRECT ANSWER")
 		answer_picked = true
 		question_picked = false
+		emit_signal("correct")
+		visible = false
 		questionpicker(randi_range(0, grade_level.size() - 1))
+		
 func _on_d_pressed() -> void:
 	if labelD.text == str(correct_answer) and answer_picked == false:
 		print("CORRECT ANSWER")
 		answer_picked = true
 		question_picked = false
+		emit_signal("correct")
+		visible = false
 		questionpicker(randi_range(0, grade_level.size() - 1))

@@ -6,3 +6,7 @@ extends Control
 @onready var lives = $lives:
 	set(value):
 		lives.text = "LIVES: " + str(value)
+		
+@onready var mult = $mult:
+	set(value):
+		mult.text = "Multi: " + str(value)
