@@ -83,10 +83,17 @@ func plus_multiplier():
 func rnd_timer():
 	
 	var time = randf_range(5.0, 10.0)
+	
 	timer.start(time)
 	
 
 func _on_timer_timeout() -> void:
-	question_hud.visible = true
-	get_tree().paused = true
+	player.spawn_protection = true
+	Global.generate = true
+	if life > 0:
+		question_hud.visible = true
+		get_tree().paused = true
 	timer_start = false
+
+func grade_chose(grade):
+	pass

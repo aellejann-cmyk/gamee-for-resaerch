@@ -16,3 +16,6 @@ res://scenes/pause_scene.tscn
 res://script/pause_scene.gd
 res://scenes/question_scene.tscn
 res://script/question_scene.gd
+res://script/grade_level.gd
+res://scenes/grade_level.tscn
+res://script/global.gd

@@ -6,7 +6,7 @@ signal correct
 @onready var labelC = $VBoxContainer/HBoxContainer3/LabelC
 @onready var labelD = $VBoxContainer/HBoxContainer4/LabelD
 @onready var question_label = $Label
-var quiz12 = [
+var grade12 = [
 	{
 		"question": "What happens at a black hole’s event horizon?",
 		"options": [
@@ -108,6 +108,108 @@ var quiz12 = [
 		"correct_answer": "Adds gravity"
 	}
 ]
+var grade11 = [
+	{
+		"question": "Which layer of the Sun is visible?",
+		"options": [
+			"Core",
+			"Radiative zone",
+			"Photosphere",
+			"Corona"
+		],
+		"correct_answer": "Photosphere"
+	},
+	{
+		"question": "What supports the Big Bang theory?",
+		"options": [
+			"Moon phases",
+			"Cosmic microwave background",
+			"Planet rotation",
+			"Magnetic fields"
+		],
+		"correct_answer": "Cosmic microwave background"
+	},
+	{
+		"question": "Why is escape velocity important?",
+		"options": [
+			"Star brightness",
+			"Orbital speed",
+			"Leaving gravitational pull",
+			"Tides"
+		],
+		"correct_answer": "Leaving gravitational pull"
+	},
+	{
+		"question": "Why can’t black holes be seen directly?",
+		"options": [
+			"Too far away",
+			"Emit no light",
+			"Don’t exist",
+			"Absorb planets"
+		],
+		"correct_answer": "Emit no light"
+	},
+	{
+		"question": "Which waves study cold gas clouds?",
+		"options": [
+			"Gamma",
+			"X-ray",
+			"Ultraviolet",
+			"Radio"
+		],
+		"correct_answer": "Radio"
+	},
+	{
+		"question": "Why does Mercury lack an atmosphere?",
+		"options": [
+			"Too dense",
+			"Far from Sun",
+			"Low gravity",
+			"Too many craters"
+		],
+		"correct_answer": "Low gravity"
+	},
+	{
+		"question": "Why is Hubble above Earth’s atmosphere?",
+		"options": [
+			"Less gravity",
+			"Avoid distortion",
+			"Closer to stars",
+			"Capture energy"
+		],
+		"correct_answer": "Avoid distortion"
+	},
+	{
+		"question": "How do stars produce energy?",
+		"options": [
+			"Burning oxygen",
+			"Nuclear fusion",
+			"Radioactive decay",
+			"Splitting atoms"
+		],
+		"correct_answer": "Nuclear fusion"
+	},
+	{
+		"question": "What tool studies non-visible light?",
+		"options": [
+			"Optical microscope",
+			"Radio telescope",
+			"Magnifying lens",
+			"Binoculars"
+		],
+		"correct_answer": "Radio telescope"
+	},
+	{
+		"question": "Which radiation observes supernova remnants?",
+		"options": [
+			"Radio",
+			"Infrared",
+			"X-ray",
+			"Microwave"
+		],
+		"correct_answer": "X-ray"
+	}
+]
 #var grade12 = ["What happens at a black hole’s event horizon?", "What causes stellar parallax?", "What causes Doppler shift in galaxies?", "Which EM wave has the shortest wavelength?", "What does an astronomical unit measure?", "What forms a neutron star?", "Why use spectroscopy?", 
 #"What happens to space-time near massive objects?", "What mainly affects a planet’s surface temperature?", "Why is dark matter important?" ]
 
@@ -140,23 +242,26 @@ var quiz12 = [
 var answer_picked = false
 var question_picked = false
 var correct_answer
-var grade_level = quiz12
+var grade_level
 # Called when the node enters the scene tree for the first time.
 
 func _ready() -> void:
-	questionpicker(randi_range(0, grade_level.size() - 1))
+	pass
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-		
+	if Global.generate == true:
+		Global.generate = false
+		pick()
 # use dictionaries and arrays for question randomization. use an array to store and to randomize picking questions,
 # then use the picked question as a key in a dictionary to get the values of an array of the choices
 func questionpicker(index):
+	
 	randomize()
 	question_picked = true
 	answer_picked = false
-	var gradelevel = quiz12[index]
+	var gradelevel = grade_level[index]
 	var question = gradelevel["question"]
 	var choices = gradelevel["options"]
 	correct_answer = gradelevel["correct_answer"]
@@ -204,3 +309,11 @@ func _on_d_pressed() -> void:
 		emit_signal("correct")
 		visible = false
 		questionpicker(randi_range(0, grade_level.size() - 1))
+
+func pick():
+	match Global.grade:
+		12:
+			grade_level = grade12
+		11:
+			grade_level = grade11
+	questionpicker(randi_range(0, grade_level.size() - 1))

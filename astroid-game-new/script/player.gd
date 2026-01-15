@@ -11,11 +11,13 @@ var can_shoot = true
 @onready var muzzle = $muzzles
 @onready var sprite = $Sprite2D
 var alive := true
-
+var spawn_protection := false
 var laser_scene = preload("res://scenes/LaserUsed.tscn")
 
 func _process(delta: float) -> void:
-	
+	if spawn_protection == true:
+		await get_tree().create_timer(1.5).timeout
+		spawn_protection = false
 	if Input.is_action_just_pressed("shoot"):
 		shoot_laser()
 
@@ -60,7 +62,7 @@ func shoot_laser():
 		can_shoot = true
 
 func die():
-	if alive == true:
+	if alive == true and spawn_protection == false:
 		alive = false
 		
 		emit_signal("died")
@@ -75,6 +77,9 @@ func respawn(pos):
 		
 		sprite.visible = true
 		process_mode = Node.PROCESS_MODE_INHERIT
-		await get_tree().create_timer(1).timeout
+		spawn_protect()
 		
-		alive = true
+func spawn_protect():
+	await get_tree().create_timer(1.5).timeout
+		
+	alive = true
