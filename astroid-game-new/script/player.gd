@@ -16,6 +16,8 @@ var laser_scene = preload("res://scenes/LaserUsed.tscn")
 
 func _process(delta: float) -> void:
 	if spawn_protection == true:
+		if Input.is_action_just_pressed("shoot"):
+			shoot_laser()
 		await get_tree().create_timer(1.5).timeout
 		spawn_protection = false
 	if Input.is_action_just_pressed("shoot"):
@@ -80,6 +82,6 @@ func respawn(pos):
 		spawn_protect()
 		
 func spawn_protect():
-	await get_tree().create_timer(1.5).timeout
+	await get_tree().create_timer(1.8).timeout
 		
 	alive = true

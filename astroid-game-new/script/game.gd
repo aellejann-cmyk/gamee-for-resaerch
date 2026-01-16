@@ -8,6 +8,8 @@ extends Node2D
 @onready var game_over_scene = $"UI/Game Over Scene"
 @onready var question_hud = $UI/question_scene
 @onready var timer = $Timer
+@onready var wrong_label = $UI/wrong_answer
+@onready var correct_label = $UI/correct_answer
 
 var timer_start = false
 
@@ -33,6 +35,7 @@ func _ready():
 	player.connect("laser_shot", firing)
 	player.connect("died", player_died)
 	question_hud.connect("correct", plus_multiplier)
+	question_hud.connect("wrong", minus_life)
 	for asteroid in Asteroids.get_children():
 		asteroid.connect("exploded", _on_asteroid_exploded)
 		
@@ -76,9 +79,24 @@ func player_died():
 		player.respawn(spawn.global_position)
 	print(life)
 
+func minus_life():
+	life -= 1
+	get_tree().paused = false
+	wrong_label.visible = true
+	if life <= 0:
+		game_over_scene.visible = true
+		player.visible = false
+		player.process_mode = Node.PROCESS_MODE_DISABLED
+		
+	await get_tree().create_timer(1.5).timeout
+	wrong_label.visible = false
+	
 func plus_multiplier():
 	multi += 0.1
 	get_tree().paused = false
+	correct_label.visible = true
+	await get_tree().create_timer(1.5).timeout
+	correct_label.visible = false
 	
 func rnd_timer():
 	

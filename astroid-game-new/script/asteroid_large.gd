@@ -16,14 +16,14 @@ func _ready() -> void:
 			area.set_deferred("shape", preload("res://Resources/asteroidLargeHitbox.tres"))
 			speed = randf_range(50, 100)
 			sprite.texture = preload("res://PlaceHolder/asteroid(1).png")
-			sprite.scale = Vector2(0.8, 0.8)
+			sprite.scale = Vector2(0.6, 0.6)
 			
 		asteroidSizes.MEDIUM:
 			#area.shape = preload("res://Resources/asteroidMediumHitbox.tres")
 			area.set_deferred("shape", preload("res://Resources/asteroidMediumHitbox.tres"))
 			speed = randf_range(100, 150)
 			sprite.texture = preload("res://PlaceHolder/meteorite.png")
-			sprite.scale = Vector2(0.5, 0.5)
+			sprite.scale = Vector2(0.4, 0.4)
 			
 		asteroidSizes.SMALL:
 			#area.shape = preload("res://Resources/asteroidSmallHitbox.tres")
