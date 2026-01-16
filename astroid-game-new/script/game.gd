@@ -100,7 +100,7 @@ func plus_multiplier():
 	
 func rnd_timer():
 	
-	var time = randf_range(5.0, 10.0)
+	var time = randf_range(10.0, 15.0)
 	
 	timer.start(time)
 	

@@ -35,10 +35,10 @@ script = ExtResource("1_mtw1i")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 52.0
-offset_top = 298.0
-offset_right = 236.0
-offset_bottom = 608.0
+offset_left = 174.0
+offset_top = 444.0
+offset_right = 358.0
+offset_bottom = 754.0
 theme_override_constants/separation = 26
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
@@ -107,12 +107,13 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -1.0
-offset_top = -211.0
-offset_right = -1.0
-offset_bottom = -151.0
+offset_left = -135.0
+offset_top = -308.0
+offset_right = -135.0
+offset_bottom = -248.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1, 0.99443656)
 size_flags_vertical = 1
 text = "QUESTION: "
 label_settings = SubResource("LabelSettings_mtw1i")

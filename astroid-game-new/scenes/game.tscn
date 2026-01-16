@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bk1qrimj1ourc"]
+[gd_scene load_steps=13 format=3 uid="uid://bk1qrimj1ourc"]
 
 [ext_resource type="PackedScene" uid="uid://kmikv8k7wdp3" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://wkh7aqywprj3" path="res://script/game.gd" id="1_yqjtg"]
@@ -12,6 +12,40 @@
 [sub_resource type="LabelSettings" id="LabelSettings_0tnpc"]
 font = ExtResource("6_gee14")
 font_size = 60
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_gee14"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(1, 540, 1)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+spread = 0.0
+initial_velocity_min = -10.0
+initial_velocity_max = -10.0
+gravity = Vector3(0, 0, 0)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_0tnpc"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(1, 540, 1)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+spread = 0.0
+initial_velocity_min = -25.0
+initial_velocity_max = -25.0
+gravity = Vector3(0, 0, 0)
+scale_min = 3.5
+scale_max = 3.5
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vtaks"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(1, 540, 1)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+spread = 0.0
+initial_velocity_min = -45.0
+initial_velocity_max = -45.0
+gravity = Vector3(0, 0, 0)
+scale_min = 7.0
+scale_max = 7.0
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_yqjtg")
@@ -57,40 +91,82 @@ label_settings = SubResource("LabelSettings_0tnpc")
 
 [node name="player" parent="." instance=ExtResource("1_uwrxv")]
 z_index = 1
-position = Vector2(644, 364)
+position = Vector2(966, 555)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(641, 358)
+position = Vector2(964, 543)
 
 [node name="Laser" type="Node" parent="."]
 
 [node name="Asteroids" type="Node" parent="."]
 
 [node name="Asteroid" parent="Asteroids" instance=ExtResource("3_lnu2h")]
-position = Vector2(281, 670)
+position = Vector2(124.000015, 992)
 
 [node name="Asteroid2" parent="Asteroids" instance=ExtResource("3_lnu2h")]
-position = Vector2(1250, 47)
+position = Vector2(1863, 64)
 
 [node name="Asteroid3" parent="Asteroids" instance=ExtResource("3_lnu2h")]
-position = Vector2(687, 17)
+position = Vector2(1787.9999, 450.99997)
 
 [node name="Asteroid4" parent="Asteroids" instance=ExtResource("3_lnu2h")]
-position = Vector2(1237, 694)
+position = Vector2(1821, 1003)
 
 [node name="Asteroid5" parent="Asteroids" instance=ExtResource("3_lnu2h")]
-position = Vector2(96.00012, 76.00003)
+position = Vector2(404.99997, 89)
 
 [node name="Asteroid6" parent="Asteroids" instance=ExtResource("3_lnu2h")]
-position = Vector2(112, 277)
+position = Vector2(118.000015, 359)
 
 [node name="Asteroid7" parent="Asteroids" instance=ExtResource("3_lnu2h")]
-position = Vector2(1279.9999, 269)
+position = Vector2(1371.0001, 75.000015)
+
+[node name="Asteroid8" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(1753, 750)
+
+[node name="Asteroid9" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(1005, 956)
+
+[node name="Asteroid10" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(586, 999)
+
+[node name="Asteroid11" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(928, 43.00006)
+
+[node name="Asteroid12" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(1864, 196.99998)
+
+[node name="Asteroid13" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(52.00003, 679.00006)
 
 [node name="PlayerRespawn" type="Node2D" parent="."]
-position = Vector2(640, 360)
+position = Vector2(971, 554)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 10.0
+
+[node name="StarFieldBack" type="GPUParticles2D" parent="."]
+z_index = -100
+position = Vector2(1959, 535)
+amount = 1500
+lifetime = 500.0
+preprocess = 380.0
+process_material = SubResource("ParticleProcessMaterial_gee14")
+
+[node name="StarFieldMiddle" type="GPUParticles2D" parent="."]
+z_index = -95
+position = Vector2(1959, 535)
+amount = 350
+lifetime = 500.0
+preprocess = 380.0
+process_material = SubResource("ParticleProcessMaterial_0tnpc")
+
+[node name="StarFieldFront" type="GPUParticles2D" parent="."]
+z_index = -80
+position = Vector2(1959, 533)
+amount = 50
+lifetime = 500.0
+preprocess = 380.0
+process_material = SubResource("ParticleProcessMaterial_vtaks")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

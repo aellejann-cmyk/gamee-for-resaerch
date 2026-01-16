@@ -666,14 +666,17 @@ func _process(delta: float) -> void:
 # use dictionaries and arrays for question randomization. use an array to store and to randomize picking questions,
 # then use the picked question as a key in a dictionary to get the values of an array of the choices
 func questionpicker(index):
+	grade_level.shuffle()
+	print(index)
 	
-	randomize()
 	question_picked = true
 	answer_picked = false
-	var gradelevel = grade_level[index]
-	
-	var question = gradelevel["question"]
-	var choices = gradelevel["options"]
+	var gradelevel
+	gradelevel = grade_level[index]
+	var question
+	question = gradelevel["question"]
+	var choices
+	choices = gradelevel["options"]
 	correct_answer = gradelevel["correct_answer"]
 	
 	choices.shuffle()
@@ -682,7 +685,7 @@ func questionpicker(index):
 	labelB.text = choices[1]
 	labelC.text = choices[2]
 	labelD.text = choices[3]
-	grade_level.shuffle()
+	
 
 func _on_a_pressed() -> void:
 	if labelA.text == str(correct_answer) and answer_picked == false:
