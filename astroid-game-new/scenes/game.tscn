@@ -149,24 +149,24 @@ wait_time = 10.0
 z_index = -100
 position = Vector2(1959, 535)
 amount = 1500
-lifetime = 500.0
-preprocess = 380.0
+lifetime = 380.0
+preprocess = 220.0
 process_material = SubResource("ParticleProcessMaterial_gee14")
 
 [node name="StarFieldMiddle" type="GPUParticles2D" parent="."]
 z_index = -95
 position = Vector2(1959, 535)
 amount = 350
-lifetime = 500.0
-preprocess = 380.0
+lifetime = 380.0
+preprocess = 220.0
 process_material = SubResource("ParticleProcessMaterial_0tnpc")
 
 [node name="StarFieldFront" type="GPUParticles2D" parent="."]
 z_index = -80
 position = Vector2(1959, 533)
 amount = 50
-lifetime = 500.0
-preprocess = 380.0
+lifetime = 380.0
+preprocess = 200.0
 process_material = SubResource("ParticleProcessMaterial_vtaks")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
