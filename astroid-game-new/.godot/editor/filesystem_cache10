@@ -1,16 +1,73 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1768655467
-02 Retro Lazer #2.mp3::AudioStreamMP3::3687271597744781130::1768655099::1768655209::1::::<><><>0<>0<>c485361101c75e203013c5f2e2eb0e92<>res://.godot/imported/02 Retro Lazer #2.mp3-ecb83eec93c17c3b8acbab770ddbb153.mp3str::
-15 Retro Explosion #2.mp3::AudioStreamMP3::3071432673207534278::1768655201::1768655209::1::::<><><>0<>0<>b83dbca131631656fb7523718ed24dff<>res://.godot/imported/15 Retro Explosion #2.mp3-52524fb01f9c86284e4b52341e2455f3.mp3str::
-18 Retro Explosion #5.mp3::AudioStreamMP3::3092360140349078328::1768655144::1768655209::1::::<><><>0<>0<>b2194f1f47a9bb72514daa41e062bf26<>res://.godot/imported/18 Retro Explosion #5.mp3-a46324ca39179abf37f1b77bfceeb96d.mp3str::
-20 Retro Enemy Dying #2.mp3::AudioStreamMP3::7254470448620925292::1768655467::1768655473::1::::<><><>0<>0<>3a6e12ab85a423c5fa215cebf1ddc50a<>res://.godot/imported/20 Retro Enemy Dying #2.mp3-d0b4e3c4573e7494ff31ed19094a01f0.mp3str::
+::res://::1768656485
 ARCADE.TTF::FontFile::7236921191307980470::1768138826::1768138828::1::::<><><>0<>0<>acbce535878a0455aa925e3148c96aab<>res://.godot/imported/ARCADE.TTF-6bbcdd7fab94cc878f03f0aab50be8a3.fontdata::
 Astroz Trial.ttf::FontFile::7233144445940953070::1768138529::1768138533::1::::<><><>0<>0<>f0920444ae23169e85bda76d6c28fa6a<>res://.godot/imported/Astroz Trial.ttf-a47fc366cd7165ab1f186dc3f5295ede.fontdata::
 DurrrSpaceShip.png::CompressedTexture2D::8840566586909894724::1765111261::1765111428::1::::<><><>0<>0<>7cc164ed88ce8b0ad7c785db0afa7a2e<>res://.godot/imported/DurrrSpaceShip.png-7aed1f3067a05f8da6f3c37260595c01.ctex::
 icon.svg::CompressedTexture2D::5236483731987019414::1765111261::1765111428::1::::<><><>0<>0<>a501b61fea5a74b9b531628f93914343<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 Screenshot 2025-11-11 214317.png::CompressedTexture2D::4794844150863683430::1765111261::1765111428::1::::<><><>0<>0<>0d96ecd776cef8cf39c9fd72ed7692cb<>res://.godot/imported/Screenshot 2025-11-11 214317.png-e38901288c8f69f94edb7d4674f014bc.ctex::
-Street Fighter II SNES-Opening Title.mp3::AudioStreamMP3::7325764683593055190::1768654085::1768654116::1::::<><><>0<>0<>459de552882f4d6fd0e5b8876dcf61c7<>res://.godot/imported/Street Fighter II SNES-Opening Title.mp3-db6e2afe701e37f068bca432b18eaa1c.mp3str::
 toppng.com-laser-beam-pixel-art-1901x351.png::CompressedTexture2D::6866797541422352920::1765111261::1765111428::1::::<><><>0<>0<>8db5ffea706547ac4e9989a51f7e379c<>res://.godot/imported/toppng.com-laser-beam-pixel-art-1901x351.png-e877b69c037bb2e60b404d189bc0e478.ctex::
+::res://Nautolan/::1768656390
+::res://Nautolan/Designs - Base/::1768656390
+::res://Nautolan/Designs - Base/Aseprite/::1768656390
+::res://Nautolan/Designs - Base/PNGs/::1768656394
+Nautolan Ship - Battlecruiser - Base.png::CompressedTexture2D::7514568838008297260::1768656390::1768656394::1::::<><><>0<>0<>19ceb64b17d18cc87f4fd318016e30fb<>res://.godot/imported/Nautolan Ship - Battlecruiser - Base.png-3fb2c3efe3f9c6a37402deea43dfc48f.ctex::
+Nautolan Ship - Bomber - Base.png::CompressedTexture2D::5335660481081730798::1768656390::1768656394::1::::<><><>0<>0<>b70f9b18b18d689476081c86dbe1ed5b<>res://.godot/imported/Nautolan Ship - Bomber - Base.png-f658e92c970b5d133d09107e756a1822.ctex::
+Nautolan Ship - Dreadnought - Base.png::CompressedTexture2D::5977595985776826136::1768656390::1768656394::1::::<><><>0<>0<>e7356311a8a61b85e8f68458bdceac07<>res://.godot/imported/Nautolan Ship - Dreadnought - Base.png-a7d30644034abe6ec6e796735d26e0b9.ctex::
+Nautolan Ship - Fighter - Base.png::CompressedTexture2D::6642563654095702254::1768656390::1768656394::1::::<><><>0<>0<>287e17a80b7d71775f30ddc2004002bd<>res://.godot/imported/Nautolan Ship - Fighter - Base.png-88915a4c294a3216e7374cc86d664503.ctex::
+Nautolan Ship - Frigate - Base.png::CompressedTexture2D::5867744151294422215::1768656390::1768656394::1::::<><><>0<>0<>765e1ff2e17a2428980a12f06fd4eb66<>res://.godot/imported/Nautolan Ship - Frigate - Base.png-8637574148004d01114f9c7306446d82.ctex::
+Nautolan Ship - Scout - Base.png::CompressedTexture2D::4063906391974463053::1768656390::1768656394::1::::<><><>0<>0<>77a45a49be493462df637c9831ce7c9c<>res://.godot/imported/Nautolan Ship - Scout - Base.png-49de185ffd9a9c2f1a5c47cc589fd6ec.ctex::
+Nautolan Ship - Support - Base.png::CompressedTexture2D::1914403382384679368::1768656390::1768656394::1::::<><><>0<>0<>7e7952cc7521286d99db4ab491281074<>res://.godot/imported/Nautolan Ship - Support - Base.png-080cb22b8558ecd74693aaeb62c7b5c9.ctex::
+Nautolan Ship - Torpedo Ship.png::CompressedTexture2D::1704487271005589405::1768656390::1768656394::1::::<><><>0<>0<>2417f136fb5cc8b0cbe448d488d94a79<>res://.godot/imported/Nautolan Ship - Torpedo Ship.png-07d1a55039c6e9b46a2ec0833d6c8a94.ctex::
+::res://Nautolan/Destruction/::1768656390
+::res://Nautolan/Destruction/Aseprite/::1768656390
+::res://Nautolan/Destruction/PNGs/::1768656394
+Nautolan Ship - Battlecruiser.png::CompressedTexture2D::3609185509462925936::1768656390::1768656394::1::::<><><>0<>0<>9a3281795685fead9adea7122640450d<>res://.godot/imported/Nautolan Ship - Battlecruiser.png-2bc950f5f0da1255554c4933452543a8.ctex::
+Nautolan Ship - Bomber.png::CompressedTexture2D::4422077898207389228::1768656390::1768656394::1::::<><><>0<>0<>7e934307fcc57771be1baa3256988b3a<>res://.godot/imported/Nautolan Ship - Bomber.png-e8dfed9f7595cf10ba33ffdc08a8a1d4.ctex::
+Nautolan Ship - Dreadnought.png::CompressedTexture2D::5001804281728344370::1768656390::1768656394::1::::<><><>0<>0<>8ecaf4252c46e89b444120567c50edc3<>res://.godot/imported/Nautolan Ship - Dreadnought.png-483048d485d8d4751d6b4c752c306847.ctex::
+Nautolan Ship - Fighter.png::CompressedTexture2D::6380474143898745023::1768656390::1768656394::1::::<><><>0<>0<>996e2cbadf214eabb095d18ffb38f7aa<>res://.godot/imported/Nautolan Ship - Fighter.png-9260937af23fa9fbc98fc37c0b49ced2.ctex::
+Nautolan Ship - Frigate.png::CompressedTexture2D::2107121511899286003::1768656390::1768656394::1::::<><><>0<>0<>08b765ab7d786ca28d0e1e60914901d9<>res://.godot/imported/Nautolan Ship - Frigate.png-2b8aa07d497ddc3d464d21a9afe2b26a.ctex::
+Nautolan Ship - Scout.png::CompressedTexture2D::1964843856014719700::1768656390::1768656394::1::::<><><>0<>0<>4aba16fca936044c8d15d02ce0b861c0<>res://.godot/imported/Nautolan Ship - Scout.png-b0002f9c41ac0823bf0280705fa7d0bb.ctex::
+Nautolan Ship - Support.png::CompressedTexture2D::432927808673244063::1768656390::1768656394::1::::<><><>0<>0<>835d8d29f13e7db8b8350156d87f48c0<>res://.godot/imported/Nautolan Ship - Support.png-348b6a1591c85fe0654938e6f822f448.ctex::
+Nautolan Ship - Torpedo Ship.png::CompressedTexture2D::5233630662808347683::1768656390::1768656394::1::::<><><>0<>0<>fe32e16629bbe6f5f5db692bcec72f3c<>res://.godot/imported/Nautolan Ship - Torpedo Ship.png-6cca6050307df2101fad356556ad914f.ctex::
+::res://Nautolan/Engine Effects/::1768656390
+::res://Nautolan/Engine Effects/Aseprite/::1768656390
+::res://Nautolan/Engine Effects/PNGs/::1768656394
+Nautolan Ship - Battlecruiser - Engine Effect.png::CompressedTexture2D::7140399150868066834::1768656390::1768656394::1::::<><><>0<>0<>db0ff9b466a8bc285c54b5c570b3b499<>res://.godot/imported/Nautolan Ship - Battlecruiser - Engine Effect.png-771c98e4c1de48d042a142d64e68af6f.ctex::
+Nautolan Ship - Bomber - Engine Effect.png::CompressedTexture2D::4326942690137724031::1768656390::1768656394::1::::<><><>0<>0<>0ca305e4d55b882925257d3d11328dc7<>res://.godot/imported/Nautolan Ship - Bomber - Engine Effect.png-e46a5ff90edeafb085dbd72990517aac.ctex::
+Nautolan Ship - Dreadnought - Engine Effect.png::CompressedTexture2D::1486914030038742119::1768656390::1768656394::1::::<><><>0<>0<>47e63345ba7d576cf0f30553ff41ecb2<>res://.godot/imported/Nautolan Ship - Dreadnought - Engine Effect.png-1d009bd3639c87d29439314ac110b04c.ctex::
+Nautolan Ship - Fighter - Engine Effect.png::CompressedTexture2D::9112071977633501761::1768656390::1768656394::1::::<><><>0<>0<>d27433cc67bc8ec05b44170b02efa848<>res://.godot/imported/Nautolan Ship - Fighter - Engine Effect.png-63d73690db5e6d1e4a2366c64aacc92a.ctex::
+Nautolan Ship - Frigate - Engine Effect.png::CompressedTexture2D::9209960496424277519::1768656390::1768656394::1::::<><><>0<>0<>8fd43dc86532bb98f38eb03e64a925d1<>res://.godot/imported/Nautolan Ship - Frigate - Engine Effect.png-b09f1be267621af94831e72e8007b070.ctex::
+Nautolan Ship - Scout - Engine Effect.png::CompressedTexture2D::3289496209599023101::1768656390::1768656394::1::::<><><>0<>0<>16ee963e0974e63a66e2af7aaeb176a6<>res://.godot/imported/Nautolan Ship - Scout - Engine Effect.png-0df21c5e67a5e66f9ae46e66c995c9aa.ctex::
+Nautolan Ship - Support - Engine Effect.png::CompressedTexture2D::6465346965768480409::1768656390::1768656394::1::::<><><>0<>0<>07ec10b6bc28fa202262e3a702248dff<>res://.godot/imported/Nautolan Ship - Support - Engine Effect.png-f70985162e2d58350913997b9fd74398.ctex::
+Nautolan Ship - Torpedo Ship - Engine Effect.png::CompressedTexture2D::6761032539298254103::1768656390::1768656394::1::::<><><>0<>0<>467e1d5b4a1f8df51a72124b4c20481f<>res://.godot/imported/Nautolan Ship - Torpedo Ship - Engine Effect.png-4b1c83f12ba234863161262dfa22ff66.ctex::
+::res://Nautolan/Shields/::1768656390
+::res://Nautolan/Shields/Aseprite/::1768656390
+::res://Nautolan/Shields/PNGs/::1768656394
+Nautolan Ship - Battlecruiser - Shield.png::CompressedTexture2D::1059676136538842301::1768656390::1768656394::1::::<><><>0<>0<>7b6b285d3d314ad5611811a443587071<>res://.godot/imported/Nautolan Ship - Battlecruiser - Shield.png-0e28caf32c8f8c223a0f63bfc3c38106.ctex::
+Nautolan Ship - Bomber - Shield.png::CompressedTexture2D::7790036927198630249::1768656390::1768656394::1::::<><><>0<>0<>8709b10dd38547ef9e1a936e2d596a0c<>res://.godot/imported/Nautolan Ship - Bomber - Shield.png-02c439765b333d79ef2ccfdb53fdb7df.ctex::
+Nautolan Ship - Dreadnought - Shield.png::CompressedTexture2D::8125392203968537373::1768656390::1768656394::1::::<><><>0<>0<>83b16e842484e96a9c5b00ca7c80c8b5<>res://.godot/imported/Nautolan Ship - Dreadnought - Shield.png-ccd735bb8575b83862fb3f776b7f5fca.ctex::
+Nautolan Ship - Fighter - Shield.png::CompressedTexture2D::811796645058491931::1768656390::1768656394::1::::<><><>0<>0<>1017bc3a13ce9cffdfde5612a27afad3<>res://.godot/imported/Nautolan Ship - Fighter - Shield.png-090f89847ec39c325c99a8de58f8c657.ctex::
+Nautolan Ship - Frigate - Shield.png::CompressedTexture2D::659342921386227473::1768656390::1768656394::1::::<><><>0<>0<>b924d767c791adfd7c60e3eb0873bb5e<>res://.godot/imported/Nautolan Ship - Frigate - Shield.png-2f1bcaf8511c056599cae00b7e012314.ctex::
+Nautolan Ship - Scout - Shield.png::CompressedTexture2D::6133995164314548839::1768656390::1768656394::1::::<><><>0<>0<>88c817f4d5e020d400131bbef0bbe25b<>res://.godot/imported/Nautolan Ship - Scout - Shield.png-4865020fa0b83aa693877ffeb7a24e94.ctex::
+Nautolan Ship - Torpedo Ship - Shield.png::CompressedTexture2D::810196644419681964::1768656390::1768656394::1::::<><><>0<>0<>1b2d0829113481d52756758b6babda2e<>res://.godot/imported/Nautolan Ship - Torpedo Ship - Shield.png-56552d384b20818198a3ed40ee2939a6.ctex::
+::res://Nautolan/Weapon Effects - Projectiles/::1768656390
+::res://Nautolan/Weapon Effects - Projectiles/Aseprite/::1768656390
+::res://Nautolan/Weapon Effects - Projectiles/PNGs/::1768656394
+Nautolan - Bomb.png::CompressedTexture2D::6609662685678752488::1768656390::1768656394::1::::<><><>0<>0<>cea68e1bd76fb792645805fe183a9e53<>res://.godot/imported/Nautolan - Bomb.png-084f4c0cb090373651cb1ab30e554afd.ctex::
+Nautolan - Bullet.png::CompressedTexture2D::293798669271731448::1768656390::1768656394::1::::<><><>0<>0<>6572fb5f616abdac43f3f1284afa140c<>res://.godot/imported/Nautolan - Bullet.png-e33a79eb8457af41d71f7e2371d50b9c.ctex::
+Nautolan - Ray.png::CompressedTexture2D::3979775662769021613::1768656390::1768656394::1::::<><><>0<>0<>0beacbc14892b9996c513f8caa07d77b<>res://.godot/imported/Nautolan - Ray.png-b18d999f4eeb0e59d47b451708315b75.ctex::
+Nautolan - Rocket.png::CompressedTexture2D::7173486741262167904::1768656390::1768656394::1::::<><><>0<>0<>f24789307c0728a0681ba1cef15b00b6<>res://.godot/imported/Nautolan - Rocket.png-c540eabb279da7eaf76f3e8f92f6aad5.ctex::
+Nautolan - Spinning Bullet.png::CompressedTexture2D::7530213576131252218::1768656390::1768656394::1::::<><><>0<>0<>d97f606cb6a4fd34839b74a4d52e4908<>res://.godot/imported/Nautolan - Spinning Bullet.png-947d4d42a2fdbabc7bf78fd1ada3eb5a.ctex::
+Nautolan - Wave.png::CompressedTexture2D::4363948510852621313::1768656390::1768656394::1::::<><><>0<>0<>c2e0d160fdc6372e5f9f19aa3026ad0e<>res://.godot/imported/Nautolan - Wave.png-144dc23cecef2ba22dae7740872aef34.ctex::
+::res://Nautolan/Weapons/::1768656390
+::res://Nautolan/Weapons/Aseprite/::1768656390
+::res://Nautolan/Weapons/PNGs/::1768656394
+Nautolan Ship - Battlecruiser - Weapons.png::CompressedTexture2D::6338832002189437629::1768656390::1768656394::1::::<><><>0<>0<>38cb82c721023f18a622a755fdfe2ff4<>res://.godot/imported/Nautolan Ship - Battlecruiser - Weapons.png-58533868b57d91b78a9305f880aa1a54.ctex::
+Nautolan Ship - Dreadnought - Weapons.png::CompressedTexture2D::5526055314508464349::1768656390::1768656394::1::::<><><>0<>0<>87565b0a2d2423849c78eb088b8f2b2e<>res://.godot/imported/Nautolan Ship - Dreadnought - Weapons.png-794edf78f7166e8950666ddd421e3db4.ctex::
+Nautolan Ship - Fighter - Weapons.png::CompressedTexture2D::3323616853632589697::1768656390::1768656394::1::::<><><>0<>0<>4b0c0f11ce985c73987ac6775d255847<>res://.godot/imported/Nautolan Ship - Fighter - Weapons.png-015160c13f7bbaf80aebb10e81239282.ctex::
+Nautolan Ship - Frigate - Weapons.png::CompressedTexture2D::2124154819523870794::1768656390::1768656394::1::::<><><>0<>0<>8a75ab66865f3f20583d734dffed7b13<>res://.godot/imported/Nautolan Ship - Frigate - Weapons.png-14b36665511077b2bb707e49b6fbffc7.ctex::
+Nautolan Ship - Scout - Weapons.png::CompressedTexture2D::6161568430744011621::1768656390::1768656394::1::::<><><>0<>0<>83ee05abfda5eb8b9d5d51cfb2507a6e<>res://.godot/imported/Nautolan Ship - Scout - Weapons.png-3f5bdc1e054ff1fc32ddbf25d6010bdb.ctex::
+Nautolan Ship - Torpedo Ship - Weapons.png::CompressedTexture2D::9165331871101529287::1768656390::1768656394::1::::<><><>0<>0<>33edde7af7a329d8afb28d24b654de80<>res://.godot/imported/Nautolan Ship - Torpedo Ship - Weapons.png-114c3f757a3df2e6900f63688d3bcbf9.ctex::
 ::res://PlaceHolder/::1765119312
 asteroid(1).png::CompressedTexture2D::3874173058855059359::1765119203::1765119312::1::::<><><>0<>0<>be4fa90eb3ff0d710423fd7764f89ea2<>res://.godot/imported/asteroid(1).png-69df0442dc05cb1abc47162a25a883e8.ctex::
 asteroid.png::CompressedTexture2D::1981105930590596307::1765119194::1765119312::1::::<><><>0<>0<>22f443dd5aec935e58d3702c5a29447f<>res://.godot/imported/asteroid.png-5816d72bffaedc30132ac85b51f188a2.ctex::
@@ -20,9 +77,9 @@ asteroidLargeHitbox.tres::CircleShape2D::4290213477171443182::1765120264::0::1::
 asteroidMediumHitbox.tres::CircleShape2D::1849923346478536332::1765120300::0::1::::<><><>0<>0<><>::
 asteroidSmallHitbox.tres::CircleShape2D::2009919556268339978::1768136625::0::1::::<><><>0<>0<><>::
 small_asteroid_textire.tres::CompressedTexture2D::3985779279699305539::1768136592::0::1::::<><><>0<>0<><>::
-::res://scenes/::1768655369
+::res://scenes/::1768655619
 asteroid.tscn::PackedScene::3242653496272224489::1768536215::0::1::::<><><>0<>0<><>::uid://bvh76kjs6xwjk::::res://script/asteroid_large.gd<>uid://bw10g48n1gfd0::::res://Resources/small_asteroid_textire.tres<>uid://3vvc1e4vgvpy::::res://Resources/asteroidSmallHitbox.tres
-game.tscn::PackedScene::3142985211228317380::1768655369::0::1::::<><><>0<>0<><>::uid://kmikv8k7wdp3::::res://scenes/player.tscn<>uid://wkh7aqywprj3::::res://script/game.gd<>uid://bstkgciyp5x3u::::res://scenes/hud.tscn<>uid://dcvr07go0h2py::::res://scenes/game_over_scene.tscn<>uid://bmg1a85vnghuf::::res://scenes/asteroid.tscn<>uid://b3b327bgw11lm::::res://scenes/pause_scene.tscn<>uid://bcrobxjho0hws::::res://scenes/question_scene.tscn<>uid://dbdvbgducoq2q::::res://ARCADE.TTF<>uid://dcmwjk1ryb4ji::::res://Street Fighter II SNES-Opening Title.mp3<>uid://bsse3becaetmg::::res://02 Retro Lazer #2.mp3<>uid://bkb7yp8tfpgfo::::res://18 Retro Explosion #5.mp3<>uid://bj03bu1pl324q::::res://15 Retro Explosion #2.mp3
+game.tscn::PackedScene::3142985211228317380::1768655619::0::1::::<><><>0<>0<><>::uid://kmikv8k7wdp3::::res://scenes/player.tscn<>uid://wkh7aqywprj3::::res://script/game.gd<>uid://bstkgciyp5x3u::::res://scenes/hud.tscn<>uid://dcvr07go0h2py::::res://scenes/game_over_scene.tscn<>uid://bmg1a85vnghuf::::res://scenes/asteroid.tscn<>uid://b3b327bgw11lm::::res://scenes/pause_scene.tscn<>uid://bcrobxjho0hws::::res://scenes/question_scene.tscn<>uid://dbdvbgducoq2q::::res://ARCADE.TTF<>uid://dcmwjk1ryb4ji::::res://Street Fighter II SNES-Opening Title.mp3<>uid://bsse3becaetmg::::res://02 Retro Lazer #2.mp3<>uid://bkb7yp8tfpgfo::::res://18 Retro Explosion #5.mp3<>uid://bj03bu1pl324q::::res://15 Retro Explosion #2.mp3<>uid://dbmeclcj5noj1::::res://20 Retro Enemy Dying #2.mp3
 laser.tscn::PackedScene::7626765335744551952::1765111820::0::1::::<><><>0<>0<><>::uid://cy7nx71jk1t3o::::res://script/player.gd<>uid://c43lfgaitppye::::res://toppng.com-laser-beam-pixel-art-1901x351.png
 LaserUsed.tscn::PackedScene::8667276041425449657::1768136132::0::1::::<><><>0<>0<><>::uid://c43lfgaitppye::::res://toppng.com-laser-beam-pixel-art-1901x351.png
 player.tscn::PackedScene::727165717777106262::1768538678::0::1::::<><><>0<>0<><>::uid://cy7nx71jk1t3o::::res://script/player.gd<>uid://dx7o3td4bvj1u::::res://DurrrSpaceShip.png<>uid://c1i5rux67wqfo::::res://script/muzzles.gd
@@ -32,9 +89,9 @@ main_menu_scene.tscn::PackedScene::8606089920224161607::1768654168::0::1::::<><>
 pause_scene.tscn::PackedScene::4355522658140034074::1768537159::0::1::::<><><>0<>0<><>::uid://bjkavmkinmv3k::::res://script/pause_scene.gd<>uid://dbdvbgducoq2q::::res://ARCADE.TTF
 question_scene.tscn::PackedScene::2562745838758858594::1768537328::0::1::::<><><>0<>0<><>::uid://ddgwyfne3b8gg::::res://script/question_scene.gd<>uid://dbdvbgducoq2q::::res://ARCADE.TTF
 grade_level.tscn::PackedScene::1399266891707908080::1768539896::0::1::::<><><>0<>0<><>::uid://chx3kt1ws5brp::::res://script/grade_level.gd<>uid://dbdvbgducoq2q::::res://ARCADE.TTF
-::res://script/::1768655369
+::res://script/::1768655516
 asteroid_large.gd::GDScript::3876835887746713148::1768536215::0::1::::Asteroid<>Area2D<><>0<>0<><>::
-game.gd::GDScript::1565280527768961898::1768655369::0::1::::<>Node2D<><>0<>0<><>::
+game.gd::GDScript::1565280527768961898::1768655516::0::1::::<>Node2D<><>0<>0<><>::
 muzzles.gd::GDScript::6616119279736548168::1765115660::0::1::::<>Node2D<><>0<>0<><>::
 player.gd::GDScript::6524265818330115234::1768536308::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
 hud.gd::GDScript::6703676953833236238::1768479423::0::1::::<>Control<><>0<>0<><>::
@@ -48,3 +105,9 @@ sprite_2d.gd::GDScript::1213346590487630195::1765111261::0::1::::<>RefCounted<><
 ::res://script/scripts/::1765115154
 area_2d.gd::GDScript::5962989892215375202::1765115077::0::1::::<>Area2D<><>0<>0<><>::
 Laserdeprecated.tscn::PackedScene::5823615799927589454::1765111925::0::1::::<><><>0<>0<><>::uid://cq7rtpuricgik::::res://script/scripts/area_2d.gd<>uid://c43lfgaitppye::::res://toppng.com-laser-beam-pixel-art-1901x351.png
+::res://Sfx/::1768656485
+02 Retro Lazer #2.mp3::AudioStreamMP3::3687271597744781130::1768655099::1768656487::1::::<><><>0<>0<>4c72f06c9f9435d38e2c7469d8773270<>res://.godot/imported/02 Retro Lazer #2.mp3-3750abbdb5c50df56fa4c43d6f55b4aa.mp3str::
+15 Retro Explosion #2.mp3::AudioStreamMP3::3071432673207534278::1768655201::1768656487::1::::<><><>0<>0<>8816e7356198e3761cce6f3d43f18fc0<>res://.godot/imported/15 Retro Explosion #2.mp3-c4297d11b5549c911ba3514bf7e0f62d.mp3str::
+18 Retro Explosion #5.mp3::AudioStreamMP3::3092360140349078328::1768655144::1768656487::1::::<><><>0<>0<>3e6da0408ad35bbe3238780f29a20b3c<>res://.godot/imported/18 Retro Explosion #5.mp3-2f978a1ee22d026f55dc44171144fb1d.mp3str::
+20 Retro Enemy Dying #2.mp3::AudioStreamMP3::7254470448620925292::1768655467::1768656487::1::::<><><>0<>0<>34245e9fe298ac678b0709834765b9ac<>res://.godot/imported/20 Retro Enemy Dying #2.mp3-b45fceb2b546b7f51d9af05e6dcfe8ab.mp3str::
+Street Fighter II SNES-Opening Title.mp3::AudioStreamMP3::7325764683593055190::1768654085::1768656487::1::::<><><>0<>0<>b0412edf85caabd6e267f92f02d013b1<>res://.godot/imported/Street Fighter II SNES-Opening Title.mp3-bfad88b1f72674cb43d0a0e1e91704e8.mp3str::

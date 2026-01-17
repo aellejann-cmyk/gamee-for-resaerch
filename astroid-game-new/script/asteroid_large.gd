@@ -8,6 +8,7 @@ enum asteroidSizes {LARGE, MEDIUM, SMALL}
 @onready var area = $CollisionShape2D
 @export var size = asteroidSizes.LARGE
 @export var movement_vector := Vector2(0, -1)
+
 func _ready() -> void:
 	rotation = randf_range(0, 2*PI)
 	match size:

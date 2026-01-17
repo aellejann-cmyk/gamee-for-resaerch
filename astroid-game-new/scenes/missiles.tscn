@@ -1,0 +1,99 @@
+[gd_scene load_steps=12 format=3 uid="uid://ckwd5tuwmjn34"]
+
+[ext_resource type="Texture2D" uid="uid://dag5jqa44j13i" path="res://Nautolan/Weapon Effects - Projectiles/PNGs/Nautolan - Rocket.png" id="1_52dnn"]
+[ext_resource type="Script" uid="uid://jgbmcb4w0pwf" path="res://script/missiles.gd" id="1_wmjhb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmjhb"]
+atlas = ExtResource("1_52dnn")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i1vrh"]
+atlas = ExtResource("1_52dnn")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_445ni"]
+atlas = ExtResource("1_52dnn")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_isb16"]
+atlas = ExtResource("1_52dnn")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lq1gc"]
+atlas = ExtResource("1_52dnn")
+region = Rect2(64, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qsx4c"]
+atlas = ExtResource("1_52dnn")
+region = Rect2(80, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ty3rr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmjhb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i1vrh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_445ni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_isb16")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lq1gc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qsx4c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rwu0a"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i1vrh"]
+
+[node name="missiles" type="CharacterBody2D"]
+rotation = -0.0067738295
+scale = Vector2(3, 3)
+script = ExtResource("1_wmjhb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(5.0044003, -0.63278246)
+rotation = 1.5675542
+sprite_frames = SubResource("SpriteFrames_ty3rr")
+autoplay = "default"
+frame_progress = 0.73159456
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.67053086, -0.66277885)
+rotation = 1.5852855
+scale = Vector2(0.7040222, 0.8985529)
+shape = SubResource("CapsuleShape2D_rwu0a")
+
+[node name="Area2D" type="Area2D" parent="."]
+z_index = 2
+position = Vector2(10.668679, -0.2610731)
+rotation = 1.599618
+collision_layer = 4
+collision_mask = 3
+
+[node name="hitbox" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.25, 9.833333)
+scale = Vector2(0.673332, 0.8850953)
+shape = SubResource("CapsuleShape2D_rwu0a")
+
+[node name="enemy detector" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy detector"]
+scale = Vector2(33.396362, 31.436584)
+shape = SubResource("CircleShape2D_i1vrh")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="enemy detector" to="." method="_on_enemy_detector_body_entered"]
