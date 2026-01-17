@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dcmwjk1ryb4ji"
+path="res://.godot/imported/Street Fighter II SNES-Opening Title.mp3-db6e2afe701e37f068bca432b18eaa1c.mp3str"
+
+[deps]
+
+source_file="res://Street Fighter II SNES-Opening Title.mp3"
+dest_files=["res://.godot/imported/Street Fighter II SNES-Opening Title.mp3-db6e2afe701e37f068bca432b18eaa1c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

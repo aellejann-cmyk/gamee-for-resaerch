@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://duu4bqop2klq2"]
+[gd_scene load_steps=8 format=3 uid="uid://duu4bqop2klq2"]
 
 [ext_resource type="Script" uid="uid://c5g50cmk71bdp" path="res://script/main_menu_scene.gd" id="1_vfskp"]
 [ext_resource type="FontFile" uid="uid://dbdvbgducoq2q" path="res://ARCADE.TTF" id="1_xhf6x"]
+[ext_resource type="AudioStream" uid="uid://dcmwjk1ryb4ji" path="res://Street Fighter II SNES-Opening Title.mp3" id="3_7hcs8"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vfskp"]
 font = ExtResource("1_xhf6x")
@@ -111,6 +112,11 @@ amount = 50
 lifetime = 500.0
 preprocess = 380.0
 process_material = SubResource("ParticleProcessMaterial_sb6w7")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_7hcs8")
+autoplay = true
+parameters/looping = true
 
 [connection signal="pressed" from="VBoxContainer/button manager/VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/button manager/VBoxContainer/Grade Level" to="." method="_on_grade_level_pressed"]

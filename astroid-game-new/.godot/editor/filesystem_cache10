@@ -1,10 +1,15 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1768138826
+::res://::1768655467
+02 Retro Lazer #2.mp3::AudioStreamMP3::3687271597744781130::1768655099::1768655209::1::::<><><>0<>0<>c485361101c75e203013c5f2e2eb0e92<>res://.godot/imported/02 Retro Lazer #2.mp3-ecb83eec93c17c3b8acbab770ddbb153.mp3str::
+15 Retro Explosion #2.mp3::AudioStreamMP3::3071432673207534278::1768655201::1768655209::1::::<><><>0<>0<>b83dbca131631656fb7523718ed24dff<>res://.godot/imported/15 Retro Explosion #2.mp3-52524fb01f9c86284e4b52341e2455f3.mp3str::
+18 Retro Explosion #5.mp3::AudioStreamMP3::3092360140349078328::1768655144::1768655209::1::::<><><>0<>0<>b2194f1f47a9bb72514daa41e062bf26<>res://.godot/imported/18 Retro Explosion #5.mp3-a46324ca39179abf37f1b77bfceeb96d.mp3str::
+20 Retro Enemy Dying #2.mp3::AudioStreamMP3::7254470448620925292::1768655467::1768655473::1::::<><><>0<>0<>3a6e12ab85a423c5fa215cebf1ddc50a<>res://.godot/imported/20 Retro Enemy Dying #2.mp3-d0b4e3c4573e7494ff31ed19094a01f0.mp3str::
 ARCADE.TTF::FontFile::7236921191307980470::1768138826::1768138828::1::::<><><>0<>0<>acbce535878a0455aa925e3148c96aab<>res://.godot/imported/ARCADE.TTF-6bbcdd7fab94cc878f03f0aab50be8a3.fontdata::
 Astroz Trial.ttf::FontFile::7233144445940953070::1768138529::1768138533::1::::<><><>0<>0<>f0920444ae23169e85bda76d6c28fa6a<>res://.godot/imported/Astroz Trial.ttf-a47fc366cd7165ab1f186dc3f5295ede.fontdata::
 DurrrSpaceShip.png::CompressedTexture2D::8840566586909894724::1765111261::1765111428::1::::<><><>0<>0<>7cc164ed88ce8b0ad7c785db0afa7a2e<>res://.godot/imported/DurrrSpaceShip.png-7aed1f3067a05f8da6f3c37260595c01.ctex::
 icon.svg::CompressedTexture2D::5236483731987019414::1765111261::1765111428::1::::<><><>0<>0<>a501b61fea5a74b9b531628f93914343<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 Screenshot 2025-11-11 214317.png::CompressedTexture2D::4794844150863683430::1765111261::1765111428::1::::<><><>0<>0<>0d96ecd776cef8cf39c9fd72ed7692cb<>res://.godot/imported/Screenshot 2025-11-11 214317.png-e38901288c8f69f94edb7d4674f014bc.ctex::
+Street Fighter II SNES-Opening Title.mp3::AudioStreamMP3::7325764683593055190::1768654085::1768654116::1::::<><><>0<>0<>459de552882f4d6fd0e5b8876dcf61c7<>res://.godot/imported/Street Fighter II SNES-Opening Title.mp3-db6e2afe701e37f068bca432b18eaa1c.mp3str::
 toppng.com-laser-beam-pixel-art-1901x351.png::CompressedTexture2D::6866797541422352920::1765111261::1765111428::1::::<><><>0<>0<>8db5ffea706547ac4e9989a51f7e379c<>res://.godot/imported/toppng.com-laser-beam-pixel-art-1901x351.png-e877b69c037bb2e60b404d189bc0e478.ctex::
 ::res://PlaceHolder/::1765119312
 asteroid(1).png::CompressedTexture2D::3874173058855059359::1765119203::1765119312::1::::<><><>0<>0<>be4fa90eb3ff0d710423fd7764f89ea2<>res://.godot/imported/asteroid(1).png-69df0442dc05cb1abc47162a25a883e8.ctex::
@@ -15,19 +20,30 @@ asteroidLargeHitbox.tres::CircleShape2D::4290213477171443182::1765120264::0::1::
 asteroidMediumHitbox.tres::CircleShape2D::1849923346478536332::1765120300::0::1::::<><><>0<>0<><>::
 asteroidSmallHitbox.tres::CircleShape2D::2009919556268339978::1768136625::0::1::::<><><>0<>0<><>::
 small_asteroid_textire.tres::CompressedTexture2D::3985779279699305539::1768136592::0::1::::<><><>0<>0<><>::
-::res://scenes/::1768138647
-asteroid.tscn::PackedScene::3242653496272224489::1768136712::0::1::::<><><>0<>0<><>::uid://bvh76kjs6xwjk::::res://script/asteroid_large.gd<>uid://bw10g48n1gfd0::::res://Resources/small_asteroid_textire.tres<>uid://3vvc1e4vgvpy::::res://Resources/asteroidSmallHitbox.tres
-game.tscn::PackedScene::3142985211228317380::1768138592::0::1::::<><><>0<>0<><>::uid://kmikv8k7wdp3::::res://scenes/player.tscn<>uid://wkh7aqywprj3::::res://script/game.gd<>uid://bstkgciyp5x3u::::res://scenes/hud.tscn<>uid://bmg1a85vnghuf::::res://scenes/asteroid.tscn
+::res://scenes/::1768655369
+asteroid.tscn::PackedScene::3242653496272224489::1768536215::0::1::::<><><>0<>0<><>::uid://bvh76kjs6xwjk::::res://script/asteroid_large.gd<>uid://bw10g48n1gfd0::::res://Resources/small_asteroid_textire.tres<>uid://3vvc1e4vgvpy::::res://Resources/asteroidSmallHitbox.tres
+game.tscn::PackedScene::3142985211228317380::1768655369::0::1::::<><><>0<>0<><>::uid://kmikv8k7wdp3::::res://scenes/player.tscn<>uid://wkh7aqywprj3::::res://script/game.gd<>uid://bstkgciyp5x3u::::res://scenes/hud.tscn<>uid://dcvr07go0h2py::::res://scenes/game_over_scene.tscn<>uid://bmg1a85vnghuf::::res://scenes/asteroid.tscn<>uid://b3b327bgw11lm::::res://scenes/pause_scene.tscn<>uid://bcrobxjho0hws::::res://scenes/question_scene.tscn<>uid://dbdvbgducoq2q::::res://ARCADE.TTF<>uid://dcmwjk1ryb4ji::::res://Street Fighter II SNES-Opening Title.mp3<>uid://bsse3becaetmg::::res://02 Retro Lazer #2.mp3<>uid://bkb7yp8tfpgfo::::res://18 Retro Explosion #5.mp3<>uid://bj03bu1pl324q::::res://15 Retro Explosion #2.mp3
 laser.tscn::PackedScene::7626765335744551952::1765111820::0::1::::<><><>0<>0<><>::uid://cy7nx71jk1t3o::::res://script/player.gd<>uid://c43lfgaitppye::::res://toppng.com-laser-beam-pixel-art-1901x351.png
 LaserUsed.tscn::PackedScene::8667276041425449657::1768136132::0::1::::<><><>0<>0<><>::uid://c43lfgaitppye::::res://toppng.com-laser-beam-pixel-art-1901x351.png
-player.tscn::PackedScene::727165717777106262::1765116916::0::1::::<><><>0<>0<><>::uid://cy7nx71jk1t3o::::res://script/player.gd<>uid://dx7o3td4bvj1u::::res://DurrrSpaceShip.png<>uid://c1i5rux67wqfo::::res://script/muzzles.gd
-hud.tscn::PackedScene::3689661049712751240::1768138647::0::1::::<><><>0<>0<><>::uid://c2rktyqyqet6e::::res://script/hud.gd<>uid://dbb13kcyla3ck::::res://Astroz Trial.ttf
-::res://script/::1768138781
-asteroid_large.gd::GDScript::3876835887746713148::1768137147::0::1::::Asteroid<>Area2D<><>0<>0<><>::
-game.gd::GDScript::1565280527768961898::1768138781::0::1::::<>Node2D<><>0<>0<><>::
+player.tscn::PackedScene::727165717777106262::1768538678::0::1::::<><><>0<>0<><>::uid://cy7nx71jk1t3o::::res://script/player.gd<>uid://dx7o3td4bvj1u::::res://DurrrSpaceShip.png<>uid://c1i5rux67wqfo::::res://script/muzzles.gd
+hud.tscn::PackedScene::3689661049712751240::1768535932::0::1::::<><><>0<>0<><>::uid://c2rktyqyqet6e::::res://script/hud.gd<>uid://dbdvbgducoq2q::::res://ARCADE.TTF
+game_over_scene.tscn::PackedScene::7344070195601117834::1768485352::0::1::::<><><>0<>0<><>::uid://dbdvbgducoq2q::::res://ARCADE.TTF<>uid://dhb845gg7fdoa::::res://script/game_over_scene.gd
+main_menu_scene.tscn::PackedScene::8606089920224161607::1768654168::0::1::::<><><>0<>0<><>::uid://c5g50cmk71bdp::::res://script/main_menu_scene.gd<>uid://dbdvbgducoq2q::::res://ARCADE.TTF<>uid://dcmwjk1ryb4ji::::res://Street Fighter II SNES-Opening Title.mp3
+pause_scene.tscn::PackedScene::4355522658140034074::1768537159::0::1::::<><><>0<>0<><>::uid://bjkavmkinmv3k::::res://script/pause_scene.gd<>uid://dbdvbgducoq2q::::res://ARCADE.TTF
+question_scene.tscn::PackedScene::2562745838758858594::1768537328::0::1::::<><><>0<>0<><>::uid://ddgwyfne3b8gg::::res://script/question_scene.gd<>uid://dbdvbgducoq2q::::res://ARCADE.TTF
+grade_level.tscn::PackedScene::1399266891707908080::1768539896::0::1::::<><><>0<>0<><>::uid://chx3kt1ws5brp::::res://script/grade_level.gd<>uid://dbdvbgducoq2q::::res://ARCADE.TTF
+::res://script/::1768655369
+asteroid_large.gd::GDScript::3876835887746713148::1768536215::0::1::::Asteroid<>Area2D<><>0<>0<><>::
+game.gd::GDScript::1565280527768961898::1768655369::0::1::::<>Node2D<><>0<>0<><>::
 muzzles.gd::GDScript::6616119279736548168::1765115660::0::1::::<>Node2D<><>0<>0<><>::
-player.gd::GDScript::6524265818330115234::1765117826::0::1::::<>CharacterBody2D<><>0<>0<><>::
-hud.gd::GDScript::6703676953833236238::1768138647::0::1::::<>Control<><>0<>0<><>::
+player.gd::GDScript::6524265818330115234::1768536308::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+hud.gd::GDScript::6703676953833236238::1768479423::0::1::::<>Control<><>0<>0<><>::
+game_over_scene.gd::GDScript::7654705368369031504::1768223087::0::1::::<>Control<><>0<>0<><>::
+main_menu_scene.gd::GDScript::6892759221764642057::1768486073::0::1::::<>Node2D<><>0<>0<><>::
+pause_scene.gd::GDScript::3038802201757591622::1768478172::0::1::::<>Control<><>0<>0<><>::
+question_scene.gd::GDScript::7383593764330783582::1768540944::0::1::::<>Control<><>0<>0<><>::
+grade_level.gd::GDScript::5313362934065695397::1768489076::0::1::::<>Control<><>0<>0<><>::
+global.gd::GDScript::4474455367391209007::1768487371::0::1::::<>Node<><>0<>0<><>::
 sprite_2d.gd::GDScript::1213346590487630195::1765111261::0::1::::<>RefCounted<><>0<>0<><>::
 ::res://script/scripts/::1765115154
 area_2d.gd::GDScript::5962989892215375202::1765115077::0::1::::<>Area2D<><>0<>0<><>::

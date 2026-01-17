@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bk1qrimj1ourc"]
+[gd_scene load_steps=18 format=3 uid="uid://bk1qrimj1ourc"]
 
 [ext_resource type="PackedScene" uid="uid://kmikv8k7wdp3" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://wkh7aqywprj3" path="res://script/game.gd" id="1_yqjtg"]
@@ -8,6 +8,11 @@
 [ext_resource type="PackedScene" uid="uid://b3b327bgw11lm" path="res://scenes/pause_scene.tscn" id="4_p57ef"]
 [ext_resource type="PackedScene" uid="uid://bcrobxjho0hws" path="res://scenes/question_scene.tscn" id="5_u5sy4"]
 [ext_resource type="FontFile" uid="uid://dbdvbgducoq2q" path="res://ARCADE.TTF" id="6_gee14"]
+[ext_resource type="AudioStream" uid="uid://dcmwjk1ryb4ji" path="res://Street Fighter II SNES-Opening Title.mp3" id="9_0tnpc"]
+[ext_resource type="AudioStream" uid="uid://bsse3becaetmg" path="res://02 Retro Lazer #2.mp3" id="10_dinhu"]
+[ext_resource type="AudioStream" uid="uid://bkb7yp8tfpgfo" path="res://18 Retro Explosion #5.mp3" id="11_kvuet"]
+[ext_resource type="AudioStream" uid="uid://bj03bu1pl324q" path="res://15 Retro Explosion #2.mp3" id="12_trtic"]
+[ext_resource type="AudioStream" uid="uid://dbmeclcj5noj1" path="res://20 Retro Enemy Dying #2.mp3" id="13_kvuet"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_0tnpc"]
 font = ExtResource("6_gee14")
@@ -166,7 +171,30 @@ z_index = -80
 position = Vector2(1959, 533)
 amount = 50
 lifetime = 380.0
-preprocess = 200.0
+preprocess = 220.0
 process_material = SubResource("ParticleProcessMaterial_vtaks")
+
+[node name="background" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("9_0tnpc")
+volume_db = -0.235
+autoplay = true
+parameters/looping = true
+
+[node name="Lasers" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_dinhu")
+volume_db = -3.817
+
+[node name="death" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_kvuet")
+volume_db = -3.817
+
+[node name="asteroiddeath" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_trtic")
+volume_db = -3.817
+
+[node name="gameover" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_kvuet")
+volume_db = 5.724
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

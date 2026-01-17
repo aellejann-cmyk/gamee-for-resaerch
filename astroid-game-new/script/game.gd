@@ -46,9 +46,11 @@ func  _process(delta: float) -> void:
 
 
 func firing(laser):
+	$Lasers.play()
 	lasers.add_child(laser)
 
 func _on_asteroid_exploded(pos, size):
+	$asteroiddeath.play()
 	match size:
 		Asteroid.asteroidSizes.LARGE:
 			score += (100 * multi)
@@ -71,9 +73,11 @@ func spawn_asteroid(pos, size):
 	Asteroids.call_deferred("add_child", a)
 
 func player_died():
+	$death.play()
 	life -= 1
 	if life <= 0:
 		game_over_scene.visible = true
+		$gameover.play()
 	else:
 		await get_tree().create_timer(2).timeout
 		player.respawn(spawn.global_position)
