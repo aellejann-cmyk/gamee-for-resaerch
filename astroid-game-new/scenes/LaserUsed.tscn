@@ -3,7 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://c43lfgaitppye" path="res://toppng.com-laser-beam-pixel-art-1901x351.png" id="2_5ieuq"]
 
 [sub_resource type="GDScript" id="GDScript_svk5y"]
-script/source = "extends Area2D
+script/source = "class_name Laser extends Area2D
+
 @export var speed := 1000.0
 
 @export var movement_vector := Vector2(0, -1)
@@ -23,6 +24,15 @@ func _on_area_entered(area: Area2D) -> void:
 		asteroid.explode()
 		queue_free()
 	elif area is Boss:
+		var boss = area
+		boss.shield_damage()
+		queue_free()
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body is Missle:
+		var m = body
+		m.die()
 		queue_free()
 "
 
@@ -51,4 +61,5 @@ shape = SubResource("CapsuleShape2D_pa2l1")
 scale = Vector2(0.5, 0.5)
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

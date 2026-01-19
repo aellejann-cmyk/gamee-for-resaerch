@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Missle
 
 
 var SPEED = randi_range(200, 300)
@@ -36,3 +37,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body is Player:
 		var player = body
 		player.die()
+		queue_free()
+	
+func die():
+	queue_free()

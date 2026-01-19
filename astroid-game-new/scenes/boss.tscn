@@ -1,10 +1,12 @@
-[gd_scene load_steps=27 format=3 uid="uid://d0wyrik8y36gx"]
+[gd_scene load_steps=43 format=3 uid="uid://d0wyrik8y36gx"]
 
 [ext_resource type="Texture2D" uid="uid://dn1aa077nlwmf" path="res://Nautolan/Shields/PNGs/Nautolan Ship - Dreadnought - Shield.png" id="1_neq0i"]
 [ext_resource type="Script" uid="uid://ct32gbieexrq8" path="res://script/boss.gd" id="1_qnbj4"]
 [ext_resource type="Texture2D" uid="uid://crfuerhwypbim" path="res://Nautolan/Designs - Base/PNGs/Nautolan Ship - Dreadnought - Base.png" id="2_jncid"]
 [ext_resource type="Shape2D" uid="uid://bummkrbo85i63" path="res://Resources/boss_shield_hitbox.tres" id="2_r3bxh"]
 [ext_resource type="FontFile" uid="uid://dbdvbgducoq2q" path="res://ARCADE.TTF" id="5_r3bxh"]
+[ext_resource type="Texture2D" uid="uid://cdi58rr2vgyyc" path="res://Nautolan/Destruction/PNGs/Nautolan Ship - Dreadnought.png" id="6_2cdgk"]
+[ext_resource type="AudioStream" uid="uid://dst8txiy4dqd" path="res://19 Retro Enemy Dying #1.mp3" id="7_qsl3t"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qnbj4"]
 atlas = ExtResource("1_neq0i")
@@ -154,18 +156,107 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_r3bxh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bagrn"]
+atlas = ExtResource("6_2cdgk")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3gxo"]
+atlas = ExtResource("6_2cdgk")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0dd2w"]
+atlas = ExtResource("6_2cdgk")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tj5kv"]
+atlas = ExtResource("6_2cdgk")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1yhm"]
+atlas = ExtResource("6_2cdgk")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pbxxu"]
+atlas = ExtResource("6_2cdgk")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyxkr"]
+atlas = ExtResource("6_2cdgk")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hhysf"]
+atlas = ExtResource("6_2cdgk")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g25uh"]
+atlas = ExtResource("6_2cdgk")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o4ffm"]
+atlas = ExtResource("6_2cdgk")
+region = Rect2(1152, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lngmi"]
+atlas = ExtResource("6_2cdgk")
+region = Rect2(1280, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q24ql"]
+atlas = ExtResource("6_2cdgk")
+region = Rect2(1408, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g2c66"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bagrn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3gxo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0dd2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tj5kv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e1yhm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pbxxu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eyxkr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hhysf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g25uh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o4ffm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lngmi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q24ql")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
 [node name="hitbox" type="Area2D"]
 collision_mask = 10
 script = ExtResource("1_qnbj4")
 
-[node name="hitbox" type="CollisionShape2D" parent="."]
+[node name="shield_hitbox" type="CollisionShape2D" parent="."]
 position = Vector2(-7.6293945e-06, 1.0000019)
-scale = Vector2(5.6318827, 5.586696)
-shape = ExtResource("2_r3bxh")
-
-[node name="boundary" type="CollisionShape2D" parent="."]
-position = Vector2(-2.2888184e-05, 3.0000057)
-scale = Vector2(16.895649, 16.760088)
+scale = Vector2(16.789728, 16.85399)
 shape = ExtResource("2_r3bxh")
 
 [node name="shield" type="AnimatedSprite2D" parent="."]
@@ -178,15 +269,31 @@ autoplay = "shield"
 scale = Vector2(3, 3)
 texture = ExtResource("2_jncid")
 
-[node name="UI" type="CanvasLayer" parent="."]
-
-[node name="shieldbar" type="ProgressBar" parent="UI"]
-offset_left = 4.0
-offset_top = 45.0
-offset_right = 8.0
-offset_bottom = 114.0
+[node name="shieldbar" type="ProgressBar" parent="."]
+offset_left = 24.0
+offset_top = 60.0
+offset_right = 28.0
+offset_bottom = 129.0
+scale = Vector2(1.6632507, 1.8504205)
 theme_override_colors/font_color = Color(0.2779463, 1.224127, 0.32073838, 1)
 theme_override_colors/font_outline_color = Color(0, 0.58431375, 0, 1)
 theme_override_fonts/font = ExtResource("5_r3bxh")
 theme_override_font_sizes/font_size = 65
-value = 100.0
+
+[node name="main" type="Area2D" parent="."]
+monitorable = false
+
+[node name="main_body" type="CollisionShape2D" parent="main"]
+position = Vector2(-2.2888184e-05, 3.0000057)
+scale = Vector2(9.614958, 14.365789)
+shape = SubResource("CircleShape2D_r3bxh")
+disabled = true
+debug_color = Color(0.7031205, 0.022074807, 0.2436361, 0.41960785)
+
+[node name="death_anim" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(2.9792936, 3)
+sprite_frames = SubResource("SpriteFrames_g2c66")
+
+[node name="shield_down" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_qsl3t")
