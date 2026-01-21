@@ -6,3 +6,4 @@ res://script/boss_arena.gd
 res://script/missiles.gd
 res://scenes/missiles.tscn
 res://script/blocking_laser.gd
+res://script/player.gd

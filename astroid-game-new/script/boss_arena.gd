@@ -39,7 +39,7 @@ func  _process(delta: float) -> void:
 		shoot_missile()
 	if attack_begins == true:
 		attack_laser()
-
+		$warning.visible = false
 
 
 func firing(laser):
@@ -109,7 +109,9 @@ func next_phase():
 	blockngLaser.visible = true
 	player.process_mode = Node.PROCESS_MODE_INHERIT
 	blockngLaser.process_mode = Node.PROCESS_MODE_INHERIT
-	await get_tree().create_timer(1).timeout
+	$warning.visible = true
+	await get_tree().create_timer(10).timeout
+	
 	attack_begins = true
 
 
@@ -119,9 +121,11 @@ func _on_blocking_laser_body_entered(body: Node2D) -> void:
 		player.die()
 		
 func attack_laser():
+	
+	
 	attack_begins = false
 	randomize()
-	var loc = randi_range(1,3)
+	var loc = randi_range(1,5)
 	laser_attack.play("RESET")
 	if loc == 1:
 		print("laser 1")
@@ -138,4 +142,13 @@ func attack_laser():
 		laser_attack.play("laser3")
 		await get_tree().create_timer(2).timeout
 		attack_begins = true
-	
+	elif loc == 4:
+		print("attack 4")
+		laser_attack.play("attack 4")
+		await get_tree().create_timer(2).timeout
+		attack_begins = true
+	elif loc == 5:
+		print("attack 5")
+		laser_attack.play("attack 5")
+		await get_tree().create_timer(2).timeout
+		attack_begins = true
