@@ -1,8 +1,8 @@
+AnimationPlayer
 Label
 CollisionShape2D
 StaticBody2D
 Node
-AnimationPlayer
 GPUParticles2D
 Line2D
 Area2D
@@ -12,4 +12,3 @@ CanvasLayer
 TextureProgressBar
 ProgressBar
 CharacterBody2D
-Sprite2D
