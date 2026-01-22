@@ -11,12 +11,15 @@ extends Node2D
 @onready var muzzle2 = $muzzles2
 @onready var blockngLaser = $"lasers/blocking laser"
 @onready var laser_attack = $"lasers/attacking laser/attack"
+@export var phase2_limit = 0
 var can_shoot = true
 var missile_scene = preload("res://scenes/missiles.tscn")
 
 var timer_start = false
 var nextPhase = false
 var attack_begins = false
+var num_attack = 0
+var winner = false
 
 var life := 1:
 	set(value):
@@ -27,6 +30,7 @@ var life := 1:
 
 
 func _ready():
+	$boss/movement.play("RESET")
 	blockngLaser.process_mode = Node.PROCESS_MODE_DISABLED
 	life = 1
 	player.connect("laser_shot", firing)
@@ -40,7 +44,9 @@ func  _process(delta: float) -> void:
 	if attack_begins == true:
 		attack_laser()
 		$warning.visible = false
-
+	if num_attack >= phase2_limit and winner == false:
+		death_anim()
+		
 
 func firing(laser):
 	$Lasers.play()
@@ -84,15 +90,22 @@ func _on_timer_timeout() -> void:
 func shoot_missile():
 	if can_shoot == true:
 		var m = missile_scene.instantiate()
-		var rng = randi_range(1,2)
+		
+		var rng = randi_range(1,3)
 		if rng == 1:
 			m.global_position = muzzle1.global_position
 		elif rng == 2:
 			m.global_position = muzzle2.global_position
+		elif rng == 3:
+			var m2 = missile_scene.instantiate()
+			m.global_position = muzzle1.global_position
+			m2.global_position = muzzle2.global_position
+			missle.add_child(m2)
 		missle.add_child(m)
+		
 		print("FIRING MISSLE")
 		can_shoot = false
-		await get_tree().create_timer(5).timeout
+		await get_tree().create_timer(3).timeout
 		can_shoot = true
 
 func next_phase():
@@ -131,24 +144,49 @@ func attack_laser():
 		print("laser 1")
 		laser_attack.play("laser")
 		await get_tree().create_timer(2).timeout
-		attack_begins = true
+		laser_attack.play("RESET")
+		if num_attack <= phase2_limit:
+			attack_begins = true
+			num_attack += 1
 	elif loc == 2:
 		laser_attack.play("laser 2")
 		print("laser 2")
 		await get_tree().create_timer(2).timeout
-		attack_begins = true
+		laser_attack.play("RESET")
+		if num_attack <= phase2_limit:
+			attack_begins = true
+			num_attack += 1
 	elif loc == 3:
 		print("laser 3")
 		laser_attack.play("laser3")
 		await get_tree().create_timer(2).timeout
-		attack_begins = true
+		laser_attack.play("RESET")
+		if num_attack <= phase2_limit:
+			attack_begins = true
+			num_attack += 1
 	elif loc == 4:
 		print("attack 4")
 		laser_attack.play("attack 4")
 		await get_tree().create_timer(2).timeout
-		attack_begins = true
+		laser_attack.play("RESET")
+		if num_attack <= phase2_limit:
+			attack_begins = true
+			num_attack += 1
 	elif loc == 5:
 		print("attack 5")
 		laser_attack.play("attack 5")
 		await get_tree().create_timer(2).timeout
-		attack_begins = true
+		laser_attack.play("RESET")
+		if num_attack <= phase2_limit:
+			attack_begins = true
+			num_attack += 1
+func death_anim():
+	$death_of_boss.play("death_of_boss")
+	winner = true
+	await get_tree().create_timer(22).timeout
+	
+	$Winner.visible = true
+	hud.visible = false
+
+func _on_mission_done_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/main_menu_scene.tscn")

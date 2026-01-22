@@ -1,13 +1,108 @@
-[gd_scene load_steps=32 format=4 uid="uid://0mjwtufj8qt1"]
+[gd_scene load_steps=50 format=4 uid="uid://0mjwtufj8qt1"]
 
 [ext_resource type="Script" uid="uid://hvoylhecbma3" path="res://script/boss_arena.gd" id="1_lpckb"]
 [ext_resource type="PackedScene" uid="uid://kmikv8k7wdp3" path="res://scenes/player.tscn" id="2_7okkn"]
 [ext_resource type="PackedScene" uid="uid://bstkgciyp5x3u" path="res://scenes/hud.tscn" id="3_84w8w"]
+[ext_resource type="Texture2D" uid="uid://cdi58rr2vgyyc" path="res://Nautolan/Destruction/PNGs/Nautolan Ship - Dreadnought.png" id="3_io3m0"]
 [ext_resource type="PackedScene" uid="uid://dcvr07go0h2py" path="res://scenes/game_over_scene.tscn" id="4_6wr5o"]
 [ext_resource type="PackedScene" uid="uid://b3b327bgw11lm" path="res://scenes/pause_scene.tscn" id="5_vi6v3"]
 [ext_resource type="PackedScene" uid="uid://d0wyrik8y36gx" path="res://scenes/boss.tscn" id="7_6wr5o"]
 [ext_resource type="FontFile" uid="uid://dbdvbgducoq2q" path="res://ARCADE.TTF" id="7_cwigj"]
 [ext_resource type="Script" uid="uid://c1i5rux67wqfo" path="res://script/muzzles.gd" id="8_cwigj"]
+[ext_resource type="PackedScene" uid="uid://bmg1a85vnghuf" path="res://scenes/asteroid.tscn" id="10_i50kd"]
+[ext_resource type="Animation" uid="uid://dacwgwe5fwiwh" path="res://Resources/death_of_boss.res" id="10_tlvdt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bagrn"]
+atlas = ExtResource("3_io3m0")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3gxo"]
+atlas = ExtResource("3_io3m0")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0dd2w"]
+atlas = ExtResource("3_io3m0")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tj5kv"]
+atlas = ExtResource("3_io3m0")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1yhm"]
+atlas = ExtResource("3_io3m0")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pbxxu"]
+atlas = ExtResource("3_io3m0")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyxkr"]
+atlas = ExtResource("3_io3m0")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hhysf"]
+atlas = ExtResource("3_io3m0")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g25uh"]
+atlas = ExtResource("3_io3m0")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o4ffm"]
+atlas = ExtResource("3_io3m0")
+region = Rect2(1152, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lngmi"]
+atlas = ExtResource("3_io3m0")
+region = Rect2(1280, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q24ql"]
+atlas = ExtResource("3_io3m0")
+region = Rect2(1408, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tlvdt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bagrn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3gxo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0dd2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tj5kv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e1yhm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pbxxu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eyxkr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hhysf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g25uh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o4ffm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lngmi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q24ql")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
 
 [sub_resource type="Animation" id="Animation_6wr5o"]
 resource_name = "movement"
@@ -197,6 +292,18 @@ tracks/4/keys = {
 "update": 1,
 "values": [false, true]
 }
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".:monitoring")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_io3m0"]
 length = 0.001
@@ -260,6 +367,18 @@ tracks/4/keys = {
 "update": 1,
 "values": [false]
 }
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".:monitoring")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_i50kd"]
 resource_name = "laser 2"
@@ -311,6 +430,18 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [-4.712389]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:monitoring")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_tlvdt"]
@@ -364,6 +495,18 @@ tracks/3/keys = {
 "update": 0,
 "values": [Vector2(1.4239467, 0.06707096), Vector2(1.4239467, 0.547071), Vector2(1.4239467, 1.267071), Vector2(1.4239467, 1.7070711), Vector2(1.4239467, 2.5470712)]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:monitoring")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_pd8li"]
 resource_name = "attack 4"
@@ -411,6 +554,18 @@ tracks/3/path = NodePath(".:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:monitoring")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -469,6 +624,18 @@ tracks/3/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:monitoring")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pd8li"]
 _data = {
@@ -484,10 +651,212 @@ _data = {
 
 [sub_resource type="LabelSettings" id="LabelSettings_vi6v3"]
 font = ExtResource("7_cwigj")
-font_size = 50
+font_size = 54
+
+[sub_resource type="Animation" id="Animation_vfq8f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("lasers/blocking laser:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1318, 269)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("lasers/blocking laser:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("lasers/blocking laser:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("boss:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1628, 553.00006)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("boss:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.0005403757]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("boss:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("boss:skew")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Asteroid:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2020, -104)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Asteroid:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Asteroid:scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.8, 0.8)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Asteroid:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("death_anim2:frame")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("death_anim2:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("boss:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("lasers/blocking laser:visible")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("lasers/blocking laser:monitoring")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nvwov"]
+_data = {
+&"RESET": SubResource("Animation_vfq8f"),
+&"death_of_boss": ExtResource("10_tlvdt")
+}
 
 [node name="boss_arena" type="Node2D"]
 script = ExtResource("1_lpckb")
+phase2_limit = 10
 
 [node name="missile" type="Node" parent="."]
 
@@ -497,9 +866,17 @@ script = ExtResource("1_lpckb")
 z_index = 2
 position = Vector2(129, 551)
 
+[node name="death_anim2" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(441, 584)
+rotation = -1.5707964
+scale = Vector2(2.9792936, 3)
+sprite_frames = SubResource("SpriteFrames_tlvdt")
+
 [node name="boss" parent="." instance=ExtResource("7_6wr5o")]
 z_index = 1
-position = Vector2(967, 544)
+position = Vector2(1628, 553.00006)
+rotation = -0.0005403757
 
 [node name="movement" type="AnimationPlayer" parent="boss"]
 root_node = NodePath("../..")
@@ -618,6 +995,7 @@ position = Vector2(1974, 254.00002)
 rotation = -1.5672396
 scale = Vector2(1.5133349, 0.0715881)
 collision_mask = 2
+monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lasers/attacking laser"]
 position = Vector2(45.300438, 285.0039)
@@ -680,6 +1058,7 @@ shape = SubResource("WorldBoundaryShape2D_rnigd")
 
 [node name="warning" type="Label" parent="."]
 visible = false
+z_index = 10
 offset_left = 287.0
 offset_top = 253.0
 offset_right = 974.0
@@ -689,5 +1068,44 @@ label_settings = SubResource("LabelSettings_vi6v3")
 horizontal_alignment = 1
 autowrap_mode = 2
 
+[node name="Winner" type="Label" parent="."]
+process_mode = 3
+visible = false
+z_index = 13
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 376.0
+offset_top = 167.0
+offset_right = 1525.5
+offset_bottom = 628.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "In that moment it seamed that the situation was hopeless as the laser moved closer and closer, but you saw something moving fast in the PARSEC Radar and in the blink of an eye the Dreadnought was shattered by a large asteroid. After a moment you see the irony of the situation, an asteroid saved your life. You can't help but laugh."
+label_settings = SubResource("LabelSettings_vi6v3")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="mission_done" type="Button" parent="Winner"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 519.0
+offset_right = 804.0
+offset_bottom = 607.0
+theme_override_fonts/font = ExtResource("7_cwigj")
+theme_override_font_sizes/font_size = 80
+text = "Mission Done"
+
+[node name="Asteroid" parent="." instance=ExtResource("10_i50kd")]
+visible = false
+position = Vector2(2020, -104)
+
+[node name="death_of_boss" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_nvwov")
+}
+
 [connection signal="body_entered" from="lasers/blocking laser" to="." method="_on_blocking_laser_body_entered"]
 [connection signal="body_entered" from="lasers/attacking laser" to="." method="_on_blocking_laser_body_entered"]
+[connection signal="pressed" from="Winner/mission_done" to="." method="_on_mission_done_pressed"]

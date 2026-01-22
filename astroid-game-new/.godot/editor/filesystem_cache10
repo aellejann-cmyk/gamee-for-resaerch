@@ -1,6 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1768826212
+::res://::1769084329
 19 Retro Enemy Dying #1.mp3::AudioStreamMP3::248938918419451095::1768826212::1768826219::1::::<><><>0<>0<>3d41e43194ca3bc3794df428692d1c68<>res://.godot/imported/19 Retro Enemy Dying #1.mp3-391e2f202431f2e89112bc7db0c51dd5.mp3str::
+27 Retro Enemy Ship #2.mp3::AudioStreamMP3::4186754467028697619::1769084327::1769084368::1::::<><><>0<>0<>e97b7f62e69103fecea603e5d46a54a1<>res://.godot/imported/27 Retro Enemy Ship #2.mp3-7747896b70c57a39f3bd1148bbc5b446.mp3str::
 ARCADE.TTF::FontFile::7236921191307980470::1768138826::1768138828::1::::<><><>0<>0<>acbce535878a0455aa925e3148c96aab<>res://.godot/imported/ARCADE.TTF-6bbcdd7fab94cc878f03f0aab50be8a3.fontdata::
 Astroz Trial.ttf::FontFile::7233144445940953070::1768138529::1768138533::1::::<><><>0<>0<>f0920444ae23169e85bda76d6c28fa6a<>res://.godot/imported/Astroz Trial.ttf-a47fc366cd7165ab1f186dc3f5295ede.fontdata::
 DurrrSpaceShip.png::CompressedTexture2D::8840566586909894724::1765111261::1765111428::1::::<><><>0<>0<>7cc164ed88ce8b0ad7c785db0afa7a2e<>res://.godot/imported/DurrrSpaceShip.png-7aed1f3067a05f8da6f3c37260595c01.ctex::
@@ -73,16 +74,17 @@ Nautolan Ship - Torpedo Ship - Weapons.png::CompressedTexture2D::916533187110152
 asteroid(1).png::CompressedTexture2D::3874173058855059359::1765119203::1765119312::1::::<><><>0<>0<>be4fa90eb3ff0d710423fd7764f89ea2<>res://.godot/imported/asteroid(1).png-69df0442dc05cb1abc47162a25a883e8.ctex::
 asteroid.png::CompressedTexture2D::1981105930590596307::1765119194::1765119312::1::::<><><>0<>0<>22f443dd5aec935e58d3702c5a29447f<>res://.godot/imported/asteroid.png-5816d72bffaedc30132ac85b51f188a2.ctex::
 meteorite.png::CompressedTexture2D::8565176755373256532::1765119155::1765119312::1::::<><><>0<>0<>15dde43a963b9a5298dbb7ec4f2d5f98<>res://.godot/imported/meteorite.png-3cdc780f266041e5de6a17fa1d8d2060.ctex::
-::res://Resources/::1768656975
+::res://Resources/::1769083287
 asteroidLargeHitbox.tres::CircleShape2D::4290213477171443182::1765120264::0::1::::<><><>0<>0<><>::
 asteroidMediumHitbox.tres::CircleShape2D::1849923346478536332::1765120300::0::1::::<><><>0<>0<><>::
 asteroidSmallHitbox.tres::CircleShape2D::2009919556268339978::1768136625::0::1::::<><><>0<>0<><>::
 boss_shield_hitbox.tres::CircleShape2D::3815717446477853914::1768656975::0::1::::<><><>0<>0<><>::
+death_of_boss.res::Animation::7164738458255254227::1769083287::0::1::::<><><>0<>0<><>::
 small_asteroid_textire.tres::CompressedTexture2D::3985779279699305539::1768136592::0::1::::<><><>0<>0<><>::
-::res://scenes/::1768823124
+::res://scenes/::1769084013
 asteroid.tscn::PackedScene::3242653496272224489::1768536215::0::1::::<><><>0<>0<><>::uid://bvh76kjs6xwjk::::res://script/asteroid_large.gd<>uid://bw10g48n1gfd0::::res://Resources/small_asteroid_textire.tres<>uid://3vvc1e4vgvpy::::res://Resources/asteroidSmallHitbox.tres
-boss.tscn::PackedScene::8960887456109629151::1768822586::0::1::::<><><>0<>0<><>::uid://dn1aa077nlwmf::::res://Nautolan/Shields/PNGs/Nautolan Ship - Dreadnought - Shield.png<>uid://ct32gbieexrq8::::res://script/boss.gd<>uid://crfuerhwypbim::::res://Nautolan/Designs - Base/PNGs/Nautolan Ship - Dreadnought - Base.png<>uid://bummkrbo85i63::::res://Resources/boss_shield_hitbox.tres<>uid://dbdvbgducoq2q::::res://ARCADE.TTF
-boss_arena.tscn::PackedScene::1780080393480594200::1768821739::0::1::::<><><>0<>0<><>::uid://hvoylhecbma3::::res://script/boss_arena.gd<>uid://kmikv8k7wdp3::::res://scenes/player.tscn<>uid://bstkgciyp5x3u::::res://scenes/hud.tscn<>uid://dcvr07go0h2py::::res://scenes/game_over_scene.tscn<>uid://b3b327bgw11lm::::res://scenes/pause_scene.tscn<>uid://d0wyrik8y36gx::::res://scenes/boss.tscn<>uid://c1i5rux67wqfo::::res://script/muzzles.gd
+boss.tscn::PackedScene::8960887456109629151::1769083064::0::1::::<><><>0<>0<><>::uid://dn1aa077nlwmf::::res://Nautolan/Shields/PNGs/Nautolan Ship - Dreadnought - Shield.png<>uid://ct32gbieexrq8::::res://script/boss.gd<>uid://crfuerhwypbim::::res://Nautolan/Designs - Base/PNGs/Nautolan Ship - Dreadnought - Base.png<>uid://bummkrbo85i63::::res://Resources/boss_shield_hitbox.tres<>uid://dbdvbgducoq2q::::res://ARCADE.TTF<>uid://cdi58rr2vgyyc::::res://Nautolan/Destruction/PNGs/Nautolan Ship - Dreadnought.png<>uid://dst8txiy4dqd::::res://19 Retro Enemy Dying #1.mp3
+boss_arena.tscn::PackedScene::1780080393480594200::1769084013::0::1::::<><><>0<>0<><>::uid://hvoylhecbma3::::res://script/boss_arena.gd<>uid://kmikv8k7wdp3::::res://scenes/player.tscn<>uid://bstkgciyp5x3u::::res://scenes/hud.tscn<>uid://cdi58rr2vgyyc::::res://Nautolan/Destruction/PNGs/Nautolan Ship - Dreadnought.png<>uid://dcvr07go0h2py::::res://scenes/game_over_scene.tscn<>uid://b3b327bgw11lm::::res://scenes/pause_scene.tscn<>uid://d0wyrik8y36gx::::res://scenes/boss.tscn<>uid://dbdvbgducoq2q::::res://ARCADE.TTF<>uid://c1i5rux67wqfo::::res://script/muzzles.gd<>uid://bmg1a85vnghuf::::res://scenes/asteroid.tscn<>uid://dacwgwe5fwiwh::::res://Resources/death_of_boss.res
 game.tscn::PackedScene::3142985211228317380::1768655619::0::1::::<><><>0<>0<><>::uid://kmikv8k7wdp3::::res://scenes/player.tscn<>uid://wkh7aqywprj3::::res://script/game.gd<>uid://bstkgciyp5x3u::::res://scenes/hud.tscn<>uid://dcvr07go0h2py::::res://scenes/game_over_scene.tscn<>uid://bmg1a85vnghuf::::res://scenes/asteroid.tscn<>uid://b3b327bgw11lm::::res://scenes/pause_scene.tscn<>uid://bcrobxjho0hws::::res://scenes/question_scene.tscn<>uid://dbdvbgducoq2q::::res://ARCADE.TTF<>uid://dcmwjk1ryb4ji::::res://Street Fighter II SNES-Opening Title.mp3<>uid://bsse3becaetmg::::res://02 Retro Lazer #2.mp3<>uid://bkb7yp8tfpgfo::::res://18 Retro Explosion #5.mp3<>uid://bj03bu1pl324q::::res://15 Retro Explosion #2.mp3<>uid://dbmeclcj5noj1::::res://20 Retro Enemy Dying #2.mp3
 game_over_scene.tscn::PackedScene::7344070195601117834::1768661336::0::1::::<><><>0<>0<><>::uid://dbdvbgducoq2q::::res://ARCADE.TTF<>uid://dhb845gg7fdoa::::res://script/game_over_scene.gd
 grade_level.tscn::PackedScene::1399266891707908080::1768539896::0::1::::<><><>0<>0<><>::uid://chx3kt1ws5brp::::res://script/grade_level.gd<>uid://dbdvbgducoq2q::::res://ARCADE.TTF
@@ -94,10 +96,10 @@ missiles.tscn::PackedScene::5520382869007013457::1768823019::0::1::::<><><>0<>0<
 pause_scene.tscn::PackedScene::4355522658140034074::1768537159::0::1::::<><><>0<>0<><>::uid://bjkavmkinmv3k::::res://script/pause_scene.gd<>uid://dbdvbgducoq2q::::res://ARCADE.TTF
 player.tscn::PackedScene::727165717777106262::1768661615::0::1::::<><><>0<>0<><>::uid://cy7nx71jk1t3o::::res://script/player.gd<>uid://dx7o3td4bvj1u::::res://DurrrSpaceShip.png<>uid://c1i5rux67wqfo::::res://script/muzzles.gd
 question_scene.tscn::PackedScene::2562745838758858594::1768537328::0::1::::<><><>0<>0<><>::uid://ddgwyfne3b8gg::::res://script/question_scene.gd<>uid://dbdvbgducoq2q::::res://ARCADE.TTF
-::res://script/::1768823124
+::res://script/::1769084013
 asteroid_large.gd::GDScript::3876835887746713148::1768658134::0::1::::Asteroid<>Area2D<><>0<>0<><>::
-boss.gd::GDScript::6165882112260411773::1768822431::0::1::::Boss<>Area2D<><>0<>0<><>::
-boss_arena.gd::GDScript::535567324008880052::1768821739::0::1::::<>Node2D<><>0<>0<><>::
+boss.gd::GDScript::6165882112260411773::1768828190::0::1::::Boss<>Area2D<><>0<>0<><>::
+boss_arena.gd::GDScript::535567324008880052::1769084013::0::1::::<>Node2D<><>0<>0<><>::
 game.gd::GDScript::1565280527768961898::1768655516::0::1::::<>Node2D<><>0<>0<><>::
 game_over_scene.gd::GDScript::7654705368369031504::1768223087::0::1::::<>Control<><>0<>0<><>::
 global.gd::GDScript::4474455367391209007::1768487371::0::1::::<>Node<><>0<>0<><>::
@@ -107,8 +109,9 @@ main_menu_scene.gd::GDScript::6892759221764642057::1768486073::0::1::::<>Node2D<
 missiles.gd::GDScript::644168113725807413::1768823124::0::1::::Missle<>CharacterBody2D<><>0<>0<><>::
 muzzles.gd::GDScript::6616119279736548168::1765115660::0::1::::<>Node2D<><>0<>0<><>::
 pause_scene.gd::GDScript::3038802201757591622::1768478172::0::1::::<>Control<><>0<>0<><>::
-player.gd::GDScript::6524265818330115234::1768536308::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+player.gd::GDScript::6524265818330115234::1768999505::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
 question_scene.gd::GDScript::7383593764330783582::1768540944::0::1::::<>Control<><>0<>0<><>::
+blocking_laser.gd::GDScript::7278574010020684062::1768831282::0::1::::<>RefCounted<><>0<>0<><>::
 sprite_2d.gd::GDScript::1213346590487630195::1765111261::0::1::::<>RefCounted<><>0<>0<><>::
 ::res://script/scripts/::1765115154
 area_2d.gd::GDScript::5962989892215375202::1765115077::0::1::::<>Area2D<><>0<>0<><>::

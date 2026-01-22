@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c5g50cmk71bdp" path="res://script/main_menu_scene.gd" id="1_vfskp"]
 [ext_resource type="FontFile" uid="uid://dbdvbgducoq2q" path="res://ARCADE.TTF" id="1_xhf6x"]
-[ext_resource type="AudioStream" uid="uid://dcmwjk1ryb4ji" path="res://Street Fighter II SNES-Opening Title.mp3" id="3_7hcs8"]
+[ext_resource type="AudioStream" uid="uid://dcmwjk1ryb4ji" path="res://Sfx/Street Fighter II SNES-Opening Title.mp3" id="3_7hcs8"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vfskp"]
 font = ExtResource("1_xhf6x")

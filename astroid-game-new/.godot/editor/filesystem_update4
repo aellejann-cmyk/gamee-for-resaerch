@@ -7,3 +7,6 @@ res://script/missiles.gd
 res://scenes/missiles.tscn
 res://script/blocking_laser.gd
 res://script/player.gd
+res://Resources/death_of_boss.res
+res://scenes/main_menu_scene.tscn
+res://script/main_menu_scene.gd
