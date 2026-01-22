@@ -2,7 +2,7 @@ extends CharacterBody2D
 class_name Missle
 
 
-var SPEED = randi_range(300, 400)
+var SPEED = randi_range(300, 350)
 const JUMP_VELOCITY = -400.0
 var _target: Player
 @onready var enemy_detector = $"enemy detector"
